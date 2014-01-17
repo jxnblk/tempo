@@ -1,0 +1,39 @@
+// Tempo
+// Type scale with vertical rhythm
+
+@import "basscss";
+@import "type";
+@import "forms";
+
+// @import "ksr-type";
+// @import "ksr-forms";
+
+@import "theme";
+
+.wrap {
+  max-width: 48rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.show-baseline {
+  background-image: url(../images/baseline-16.svg);
+  background-size: .5rem .5rem;
+}
+.baseline-ksr {
+  background-size: 10px 10px;
+}
+
+$blueprint: #07a;
+.outline, .outline * {
+  color: rgba($blueprint,.6);
+  outline: 1px solid rgba($blueprint, .3);
+  input {
+    border-color: rgba($blueprint, .6);
+    background-color: rgba(#fff,.2);
+  }
+  .button {
+    background-color: rgba($blueprint, .2);
+  }
+}
+

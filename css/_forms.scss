@@ -1,0 +1,65 @@
+
+// Tempo forms
+
+// Switch from ems to $base-unit
+
+.button {
+  //Reset
+  font-family: inherit;
+  font-weight: bold;
+  font-smoothing: antialiased;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  white-space: nowrap;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  // Base styles
+  display: inline-block;
+  line-height: 2.5em;
+  padding: 0 1em;
+  border-radius: .25em;
+}
+
+.form {
+  input[type='text'] {
+    appearance: none;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    outline: none;
+    max-width: 100%;
+    height: 2.5em;
+    line-height: 2em;
+    padding: .5em;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-radius: .25em;
+    &:focus {
+      //border-color: $blue;
+      //box-shadow: 0 0 2px 2px rgba($blue,.3);
+    }
+  }
+  select {
+    -webkit-appearance: menulist-button;
+    height: 2em;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.form-stacked {
+  input[type='text'], label, select {
+    display: block;
+    //margin-bottom: 10px;
+  }
+  input[type='text'], select {
+    margin-bottom: 1*$space;
+  }
+}
+

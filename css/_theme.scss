@@ -1,0 +1,16 @@
+// Theme
+
+$blue: #0096cc;
+
+body {
+  color: #333;
+}
+
+.button-blue {
+  color: #fff;
+  background-color: $blue;
+  &:hover {
+    background-color: lighten($blue,10%);
+  }
+}
+

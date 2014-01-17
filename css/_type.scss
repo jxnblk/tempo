@@ -1,0 +1,58 @@
+// Type
+
+$base-unit: 1rem;
+
+body { line-height: 1.5*$base-unit; }
+h1, .h1 { font-size: 2*$base-unit; line-height: 3*$base-unit; }
+h2, .h2 { font-size: 1.5*$base-unit; line-height: 2*$base-unit; }
+h3, .h3 { font-size: 1.25*$base-unit; line-height: 2*$base-unit; }
+h4, .h4, h5, .h5, p, .p { font-size: 1*$base-unit; }
+h6, .h6, small, .small { font-size: .875*$base-unit; }
+
+.responsive {
+  @media (min-width: 768px) {
+    .h1, &.h1 { font-size: 4*$base-unit; line-height: 5*$base-unit; }
+    .h2, &.h2 { font-size: 3*$base-unit; line-height: 4*$base-unit; }
+    .h3, &.h3 { font-size: 2*$base-unit; line-height: 3*$base-unit; }
+    .h4, &.h4, .h5, &.h5, .p, &.p { font-size: 1.125*$base-unit; }
+    .h6, &.h6, .small, &.small { font-size: 1*$base-unit; }
+  }
+  @media (min-width: 1024px) {
+    .h1, &.h1 { font-size: 6*$base-unit; line-height: 8*$base-unit; }
+  }
+}
+
+.type-margins {
+  h1, .h1 { margin-bottom: 1*$space; }
+  h2, .h2 { margin-bottom: 1*$space; }
+  h3, .h3 { margin-bottom: 1*$space; }
+  h4, h5, h6, p, dl, ol, ul { margin-bottom: 1*$space; }
+}
+
+h1, h2, h3, h4, h5, h6, p, dl, ol, ul { margin-top: 0; }
+h1, .h1 { margin-bottom: 1*$space; }
+h2, .h2 { margin-bottom: 1*$space; }
+h3, .h3 { margin-bottom: 1*$space; }
+h4, h5, h6, p, dl, ol, ul { margin-bottom: 1*$space; }
+
+.mb0 { margin-bottom: 0; }
+
+// Utilities
+strong, .bold { font-weight: bold; }
+.italic { font-style: italic; }
+.regular { font-weight: normal; }
+.caps { text-transform: uppercase; letter-spacing: .2em; }
+.center { text-align: center; }
+.right-align  { text-align: right; }
+
+
+.georgia { font-family: Georgia, serif; }
+.aktive { font-family: "aktiv-grotesk-std" sans-serif; }
+.garamond { font-family: "adobe-garamond-pro"; }
+.tisa { font-family: "ff-tisa-web-pro"; }
+.chaparral { font-family: "chaparral-pro"; }
+.spinoza { font-family: "ff-spinoza-web-pro"; }
+.warnock { font-family: "warnock-pro"; }
+.open-sans { font-family: "open-sans"; }
+.freight-sans { font-family: "freight-sans-pro"; }
+
