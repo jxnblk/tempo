@@ -2,13 +2,20 @@
 // Type scale with vertical rhythm
 
 @import "basscss";
-@import "type";
+// @import "type";
 @import "forms";
 
-// @import "ksr-type";
-// @import "ksr-forms";
-
 @import "theme";
+
+.georgia { font-family: Georgia, serif; }
+.aktive { font-family: "aktiv-grotesk-std" sans-serif; }
+.garamond { font-family: "adobe-garamond-pro"; }
+.tisa { font-family: "ff-tisa-web-pro"; }
+.chaparral { font-family: "chaparral-pro"; }
+.spinoza { font-family: "ff-spinoza-web-pro"; }
+.warnock { font-family: "warnock-pro"; }
+.open-sans { font-family: "open-sans"; }
+.freight-sans { font-family: "freight-sans-pro"; }
 
 .wrap {
   max-width: 48rem;
@@ -18,6 +25,7 @@
 
 .show-baseline {
   background-image: url(../images/baseline-16.svg);
+  // background-size: .5rem .5rem;
   background-size: .5rem .5rem;
 }
 .baseline-ksr {

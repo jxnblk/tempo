@@ -1,1 +1,336 @@
-body,button,input,select,textarea{margin:0}button,input,select,textarea{font-family:inherit;font-size:100%}article,aside,details,figcaption,figure,footer,header,main,nav,section,summary{display:block}body{font-family:"Helvetica Neue",Helvetica,sans-serif;font-weight:400}.m1{margin:1rem}.mt1{margin-top:1rem}.mr1{margin-right:1rem}.mb1{margin-bottom:1rem}.ml1{margin-left:1rem}.m2{margin:2rem}.mt2{margin-top:2rem}.mr2{margin-right:2rem}.mb2{margin-bottom:2rem}.ml2{margin-left:2rem}.m3{margin:3rem}.mt3{margin-top:3rem}.mr3{margin-right:3rem}.mb3{margin-bottom:3rem}.ml3{margin-left:3rem}.m4{margin:4rem}.mt4{margin-top:4rem}.mr4{margin-right:4rem}.mb4{margin-bottom:4rem}.ml4{margin-left:4rem}.mxa{margin-right:auto;margin-left:auto}.p1{padding:1rem}.px1{padding-right:1rem;padding-left:1rem}.py1{padding-top:1rem;padding-bottom:1rem}.p2{padding:2rem}.px2{padding-right:2rem;padding-left:2rem}.py2{padding-top:2rem;padding-bottom:2rem}.p3{padding:3rem}.px3{padding-right:3rem;padding-left:3rem}.py3{padding-top:3rem;padding-bottom:3rem}.p4{padding:4rem}.px4{padding-right:4rem;padding-left:4rem}.py4{padding-top:4rem;padding-bottom:4rem}.inline{display:inline}.block{display:block}.inline-block{display:inline-block}.clearfix{overflow:hidden}.left{float:left}.right{float:right}.fit{max-width:100%}body{line-height:1.5rem}h1,.h1{font-size:2rem;line-height:3rem}h2,.h2{font-size:1.5rem;line-height:2rem}h3,.h3{font-size:1.25rem;line-height:2rem}h4,.h4,h5,.h5,p,.p{font-size:1rem}h6,.h6,small,.small{font-size:0.875rem}@media (min-width: 768px){.responsive .h1,.responsive.h1{font-size:4rem;line-height:5rem}.responsive .h2,.responsive.h2{font-size:3rem;line-height:4rem}.responsive .h3,.responsive.h3{font-size:2rem;line-height:3rem}.responsive .h4,.responsive.h4,.responsive .h5,.responsive.h5,.responsive .p,.responsive.p{font-size:1.125rem}.responsive .h6,.responsive.h6,.responsive .small,.responsive.small{font-size:1rem}}@media (min-width: 1024px){.responsive .h1,.responsive.h1{font-size:6rem;line-height:8rem}}.type-margins h1,.type-margins .h1{margin-bottom:1rem}.type-margins h2,.type-margins .h2{margin-bottom:1rem}.type-margins h3,.type-margins .h3{margin-bottom:1rem}.type-margins h4,.type-margins h5,.type-margins h6,.type-margins p,.type-margins dl,.type-margins ol,.type-margins ul{margin-bottom:1rem}h1,h2,h3,h4,h5,h6,p,dl,ol,ul{margin-top:0}h1,.h1{margin-bottom:1rem}h2,.h2{margin-bottom:1rem}h3,.h3{margin-bottom:1rem}h4,h5,h6,p,dl,ol,ul{margin-bottom:1rem}.mb0{margin-bottom:0}strong,.bold{font-weight:bold}.italic{font-style:italic}.regular{font-weight:normal}.caps{text-transform:uppercase;letter-spacing:.2em}.center{text-align:center}.right-align{text-align:right}.georgia{font-family:Georgia, serif}.aktive{font-family:"aktiv-grotesk-std" sans-serif}.garamond{font-family:"adobe-garamond-pro"}.tisa{font-family:"ff-tisa-web-pro"}.chaparral{font-family:"chaparral-pro"}.spinoza{font-family:"ff-spinoza-web-pro"}.warnock{font-family:"warnock-pro"}.open-sans{font-family:"open-sans"}.freight-sans{font-family:"freight-sans-pro"}.button{font-family:inherit;font-weight:bold;font-smoothing:antialiased;text-decoration:none;cursor:pointer;outline:none;border:none;-webkit-appearance:none;white-space:nowrap;margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;display:inline-block;line-height:2.5em;padding:0 1em;border-radius:.25em}.form input[type='text']{appearance:none;border-style:solid;border-width:1px;box-sizing:border-box;outline:none;max-width:100%;height:2.5em;line-height:2em;padding:.5em;margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;border-radius:.25em}.form select{-webkit-appearance:menulist-button;height:2em;margin-right:0;margin-left:0}.form-stacked input[type='text'],.form-stacked label,.form-stacked select{display:block}.form-stacked input[type='text'],.form-stacked select{margin-bottom:1rem}body{color:#333}.button-blue{color:#fff;background-color:#0096cc}.button-blue:hover{background-color:#00bcff}.wrap{max-width:48rem;margin-right:auto;margin-left:auto}.show-baseline{background-image:url(../images/baseline-16.svg);background-size:.5rem .5rem}.baseline-ksr{background-size:10px 10px}.outline,.outline *{color:rgba(0,119,170,0.6);outline:1px solid rgba(0,119,170,0.3)}.outline input,.outline * input{border-color:rgba(0,119,170,0.6);background-color:rgba(255,255,255,0.2)}.outline .button,.outline * .button{background-color:rgba(0,119,170,0.2)}
+/*
+
+  BASSCSS
+
+  Part reset, part boilerplate, part framework, all minimal.
+
+  BASSCSS is a small reset and collection of simple type and layout
+  classes that can be used as the basis for any web project.
+  Use it out of the box or as a base for a larger SASS project.
+
+
+  Contents:
+  1. Reset
+  2. Typography
+     a. Default Font Stack
+     b. Base Type Scale
+     c. Responsive Type Scale
+     d. Utilities
+  3. Layout
+     a. Margins
+     b. Padding
+     c. Display
+     d. Utilities
+
+
+  Made with love by Jxnblk
+
+*/
+h1, h2, h3, h4, h5, h6, p, dl, ol, ul {
+  margin-top: 0; }
+
+body, button, input, select, textarea {
+  margin: 0; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%; }
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display: block; }
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem; }
+
+h1, .h1, h2, .h2, h3, h4, h5, h6, p, dl, ol, ul {
+  margin-bottom: 1rem; }
+
+h1, .h1 {
+  font-size: 2rem;
+  line-height: 3rem; }
+
+h2, .h2 {
+  font-size: 1.5rem;
+  line-height: 2rem; }
+
+h3, h4, h5, h6, dl, ol, ul, p, .p {
+  font-size: 1.125rem; }
+
+small, .small {
+  font-size: .875rem; }
+
+@media (min-width: 768px) {
+  .responsive .h1, .responsive.h1 {
+    font-size: 4rem;
+    line-height: 5rem; }
+  .responsive .h2, .responsive.h2 {
+    font-size: 2rem;
+    line-height: 3rem; }
+  .responsive .p, .responsive.p {
+    font-size: 1.25rem; }
+  .responsive .small, .responsive.small {
+    font-size: 1rem; } }
+@media (min-width: 1024px) {
+  .responsive .h1, .responsive.h1 {
+    font-size: 6rem;
+    line-height: 8rem; }
+  .responsive .h2, .responsive.h2 {
+    font-size: 3rem;
+    line-height: 4rem; } }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+.regular {
+  font-weight: normal; }
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: .2em; }
+
+.center {
+  text-align: center; }
+
+.right-align {
+  text-align: right; }
+
+.mb0 {
+  margin-bottom: 0; }
+
+.m1 {
+  margin: 1rem; }
+
+.mt1 {
+  margin-top: 1rem; }
+
+.mr1 {
+  margin-right: 1rem; }
+
+.mb1 {
+  margin-bottom: 1rem; }
+
+.ml1 {
+  margin-left: 1rem; }
+
+.m2 {
+  margin: 2rem; }
+
+.mt2 {
+  margin-top: 2rem; }
+
+.mr2 {
+  margin-right: 2rem; }
+
+.mb2 {
+  margin-bottom: 2rem; }
+
+.ml2 {
+  margin-left: 2rem; }
+
+.m3 {
+  margin: 3rem; }
+
+.mt3 {
+  margin-top: 3rem; }
+
+.mr3 {
+  margin-right: 3rem; }
+
+.mb3 {
+  margin-bottom: 3rem; }
+
+.ml3 {
+  margin-left: 3rem; }
+
+.m4 {
+  margin: 4rem; }
+
+.mt4 {
+  margin-top: 4rem; }
+
+.mr4 {
+  margin-right: 4rem; }
+
+.mb4 {
+  margin-bottom: 4rem; }
+
+.ml4 {
+  margin-left: 4rem; }
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto; }
+
+.p1 {
+  padding: 1rem; }
+
+.px1 {
+  padding-right: 1rem;
+  padding-left: 1rem; }
+
+.py1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.p2 {
+  padding: 2rem; }
+
+.px2 {
+  padding-right: 2rem;
+  padding-left: 2rem; }
+
+.py2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.p3 {
+  padding: 3rem; }
+
+.px3 {
+  padding-right: 3rem;
+  padding-left: 3rem; }
+
+.py3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.p4 {
+  padding: 4rem; }
+
+.px4 {
+  padding-right: 4rem;
+  padding-left: 4rem; }
+
+.py4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
+.inline {
+  display: inline; }
+
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+.clearfix {
+  overflow: hidden; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.fit {
+  max-width: 100%; }
+
+.button {
+  font-family: inherit;
+  font-weight: bold;
+  font-smoothing: antialiased;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  white-space: nowrap;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  display: inline-block;
+  line-height: 2.5rem;
+  padding: 0 1rem;
+  border-radius: .25rem; }
+
+.form {
+  font-size: 1rem; }
+  .form input[type='text'] {
+    appearance: none;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    outline: none;
+    max-width: 100%;
+    height: 2.5rem;
+    line-height: 2rem;
+    padding: .5rem;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-radius: .25rem; }
+  .form select {
+    -webkit-appearance: menulist-button;
+    height: 2rem;
+    margin-right: 0;
+    margin-left: 0; }
+
+.form-stacked input[type='text'], .form-stacked label, .form-stacked select {
+  display: block; }
+.form-stacked input[type='text'], .form-stacked select {
+  margin-bottom: 1rem; }
+
+body {
+  color: #333; }
+
+.button-blue {
+  color: #fff;
+  background-color: #0096cc; }
+  .button-blue:hover {
+    background-color: #00bcff; }
+
+.georgia {
+  font-family: Georgia, serif; }
+
+.aktive {
+  font-family: "aktiv-grotesk-std" sans-serif; }
+
+.garamond {
+  font-family: "adobe-garamond-pro"; }
+
+.tisa {
+  font-family: "ff-tisa-web-pro"; }
+
+.chaparral {
+  font-family: "chaparral-pro"; }
+
+.spinoza {
+  font-family: "ff-spinoza-web-pro"; }
+
+.warnock {
+  font-family: "warnock-pro"; }
+
+.open-sans {
+  font-family: "open-sans"; }
+
+.freight-sans {
+  font-family: "freight-sans-pro"; }
+
+.wrap {
+  max-width: 48rem;
+  margin-right: auto;
+  margin-left: auto; }
+
+.show-baseline {
+  background-image: url(../images/baseline-16.svg);
+  background-size: .5rem .5rem; }
+
+.baseline-ksr {
+  background-size: 10px 10px; }
+
+.outline, .outline * {
+  color: rgba(0, 119, 170, 0.6);
+  outline: 1px solid rgba(0, 119, 170, 0.3); }
+  .outline input, .outline * input {
+    border-color: rgba(0, 119, 170, 0.6);
+    background-color: rgba(255, 255, 255, 0.2); }
+  .outline .button, .outline * .button {
+    background-color: rgba(0, 119, 170, 0.2); }
