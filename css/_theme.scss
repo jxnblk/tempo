@@ -6,6 +6,11 @@ body {
   color: #333;
 }
 
+.white { color: #fff; }
+.bg-white { background-color: #fff; }
+.blue { color: $blue; }
+.bg-blue { background-color: $blue; }
+
 .button-blue {
   color: #fff;
   background-color: $blue;

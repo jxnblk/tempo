@@ -1,0 +1,37 @@
+// Width utilities
+
+.x25  { width: 25%; }
+.x50  { width: 50%; }
+.x75  { width: 75%; }
+.x100 { width: 100%; }
+
+.x33 { width: percentage(1/3); }
+.x66 { width: percentage(2/3); }
+
+@media (max-width: 640px) {
+  .s-x25  { width: 25%; }
+  .s-x50  { width: 50%; }
+  .s-x75  { width: 75%; }
+  .s-x100 { width: 100%; }
+  .s-x33 { width: percentage(1/3); }
+  .s-x66 { width: percentage(2/3); }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .m-x25  { width: 25%; }
+  .m-x50  { width: 50%; }
+  .m-x75  { width: 75%; }
+  .m-x100 { width: 100%; }
+  .m-x33 { width: percentage(1/3); }
+  .m-x66 { width: percentage(2/3); }
+}
+
+@media (min-width: 1025px) {
+  .l-x25  { width: 25%; }
+  .l-x50  { width: 50%; }
+  .l-x75  { width: 75%; }
+  .l-x100 { width: 100%; }
+  .l-x33 { width: percentage(1/3); }
+  .l-x66 { width: percentage(2/3); }
+}
+
