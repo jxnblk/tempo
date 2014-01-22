@@ -8,8 +8,12 @@
 //   </div>
 // </div>
 
+// max-width of 75rem (1200px) sets 1 column to 4.5rem (72px)
+$max-width: 75rem;
+$gutter: 2%;
+
 .wrap {
-  max-width: 75rem;
+  max-width: $max-width;
   margin-right: auto;
   margin-left: auto;
 }
@@ -17,6 +21,7 @@
 @include break(medium-plus){
   .grid-row {
     overflow: hidden;
+    // Remove 2% from each side because 96% is divisible by 12
     &:before {
       content: ' ';
       float: left;
@@ -32,18 +37,18 @@
   }
   .grid {
     float: left;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin-right: $gutter/2;
+    margin-left: $gutter/2;
   }
   @for $i from 1 through 12 {
     .grid-#{$i} {
-      width: percentage($i/12) - 2% - 4%/12*$i;
+      width: percentage($i/12) - $gutter - 4%/12*$i;
     }
     .grid-pre-#{$i} {
-      margin-left: percentage($i/12) + 1% - 4%/12*$i;
+      margin-left: percentage($i/12) + $gutter/2 - 4%/12*$i;
     }
     .grid-post-#{$i} {
-      margin-right: percentage($i/12) + 1% - 4%/12*$i;
+      margin-right: percentage($i/12) + $gutter/2 - 4%/12*$i;
     }
   }
 }
