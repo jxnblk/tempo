@@ -9,9 +9,12 @@
 
 */
 
+@import "breakpoints";
+
 @import "basscss";
 @import "forms";
 @import "positions";
+@import "grid";
 @import "widths";
 @import "bar";
 @import "banners";
@@ -31,6 +34,7 @@
 
 .wrap {
   max-width: 48rem;
+  max-width: 64rem;
   margin-right: auto;
   margin-left: auto;
 }

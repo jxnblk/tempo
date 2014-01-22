@@ -1,0 +1,44 @@
+// Grid
+
+/*
+ * 
+ *
+ *
+ *
+ */
+
+$gutter: 2%;
+
+.grid-wrap {
+  overflow: hidden;
+  // max-width: 48rem;
+}
+
+@include break(medium-plus){
+  .grid-wrap {
+    margin-left: -$gutter/2;
+    margin-right: -$gutter/2;
+  }
+  .grid {
+    float: left;
+    margin-right: $gutter/2;
+    margin-left: $gutter/2;
+  }
+  @for $i from 1 through 12 {
+    .grid-#{$i} {
+      width: percentage($i/12) - $gutter;
+      // width: $i * 6%;
+    }
+    .grid-pre-#{$i} {
+      margin-left: percentage($i/12);
+    }
+    .grid-post-#{$i} {
+      margin-right: percentage($i/12);
+    }
+  }
+}
+
+.debugger, .debugger * {
+  outline: 1px solid pink;
+}
+

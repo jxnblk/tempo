@@ -313,6 +313,135 @@ small, .small {
 .l0 {
   left: 0; }
 
+/*
+ * 
+ *
+ *
+ *
+ */
+.grid-wrap {
+  overflow: hidden; }
+
+@media (min-width: 769px) {
+  .grid-wrap {
+    margin-left: -1%;
+    margin-right: -1%; }
+
+  .grid {
+    float: left;
+    margin-right: 1%;
+    margin-left: 1%; }
+
+  .grid-1 {
+    width: 6.33333%; }
+
+  .grid-pre-1 {
+    margin-left: 8.33333%; }
+
+  .grid-post-1 {
+    margin-right: 8.33333%; }
+
+  .grid-2 {
+    width: 14.66667%; }
+
+  .grid-pre-2 {
+    margin-left: 16.66667%; }
+
+  .grid-post-2 {
+    margin-right: 16.66667%; }
+
+  .grid-3 {
+    width: 23%; }
+
+  .grid-pre-3 {
+    margin-left: 25%; }
+
+  .grid-post-3 {
+    margin-right: 25%; }
+
+  .grid-4 {
+    width: 31.33333%; }
+
+  .grid-pre-4 {
+    margin-left: 33.33333%; }
+
+  .grid-post-4 {
+    margin-right: 33.33333%; }
+
+  .grid-5 {
+    width: 39.66667%; }
+
+  .grid-pre-5 {
+    margin-left: 41.66667%; }
+
+  .grid-post-5 {
+    margin-right: 41.66667%; }
+
+  .grid-6 {
+    width: 48%; }
+
+  .grid-pre-6 {
+    margin-left: 50%; }
+
+  .grid-post-6 {
+    margin-right: 50%; }
+
+  .grid-7 {
+    width: 56.33333%; }
+
+  .grid-pre-7 {
+    margin-left: 58.33333%; }
+
+  .grid-post-7 {
+    margin-right: 58.33333%; }
+
+  .grid-8 {
+    width: 64.66667%; }
+
+  .grid-pre-8 {
+    margin-left: 66.66667%; }
+
+  .grid-post-8 {
+    margin-right: 66.66667%; }
+
+  .grid-9 {
+    width: 73%; }
+
+  .grid-pre-9 {
+    margin-left: 75%; }
+
+  .grid-post-9 {
+    margin-right: 75%; }
+
+  .grid-10 {
+    width: 81.33333%; }
+
+  .grid-pre-10 {
+    margin-left: 83.33333%; }
+
+  .grid-post-10 {
+    margin-right: 83.33333%; }
+
+  .grid-11 {
+    width: 89.66667%; }
+
+  .grid-pre-11 {
+    margin-left: 91.66667%; }
+
+  .grid-post-11 {
+    margin-right: 91.66667%; }
+
+  .grid-12 {
+    width: 98%; }
+
+  .grid-pre-12 {
+    margin-left: 100%; }
+
+  .grid-post-12 {
+    margin-right: 100%; } }
+.debugger, .debugger * {
+  outline: 1px solid pink; }
+
 .x25 {
   width: 25%; }
 
@@ -407,6 +536,12 @@ html, body {
 
 .y75 {
   height: 75%; }
+
+.y50 {
+  height: 50%; }
+
+.y25 {
+  height: 25%; }
 
 .pull-x12 {
   margin-left: -12.5%; }
@@ -602,6 +737,7 @@ body {
 
 .wrap {
   max-width: 48rem;
+  max-width: 64rem;
   margin-right: auto;
   margin-left: auto; }
 
