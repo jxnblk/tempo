@@ -1,35 +1,49 @@
 // Grid
 //
-// Trying to figure out a grid system that lines up with non-grid items as well
-// may need percentage based padding x styles
-//
+// Usage:
+// <div class="wrap">
+//   <div class="grid-row">
+//     <div class="grid grid-4"> </div>
+//     <div class="grid grid-8"> </div>
+//   </div>
+// </div>
 
-$gutter: 2%;
-
-.grid-wrap {
-  overflow: hidden;
-  // max-width: 48rem;
+.wrap {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @include break(medium-plus){
-  .grid-wrap {
-    margin-left: -$gutter/2;
-    margin-right: -$gutter/2;
+  .grid-row {
+    overflow: hidden;
+    &:before {
+      content: ' ';
+      float: left;
+      width: 2%;
+      height: 1px;
+    }
+    &:after {
+      content: ' ';
+      float: left;
+      width: 2%;
+      height: 1px;
+    }
   }
   .grid {
     float: left;
-    margin-right: $gutter/2;
-    margin-left: $gutter/2;
+    margin-right: 1%;
+    margin-left: 1%;
   }
   @for $i from 1 through 12 {
     .grid-#{$i} {
-      width: percentage($i/12) - $gutter;
+      width: percentage($i/12) - 2% - 4%/12*$i;
     }
     .grid-pre-#{$i} {
-      margin-left: percentage($i/12) + $gutter/2;
+      margin-left: percentage($i/12) + 1% - 4%/12*$i;
     }
     .grid-post-#{$i} {
-      margin-right: percentage($i/12) + $gutter/2;
+      margin-right: percentage($i/12) + 1% - 4%/12*$i;
     }
   }
 }
