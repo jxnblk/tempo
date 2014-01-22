@@ -346,6 +346,12 @@ small, .small {
   .grid-post-1 {
     margin-right: 9.0%; }
 
+  .wrap-1 {
+    width: 6.0%;
+    max-width: 4.5rem;
+    margin-right: auto;
+    margin-left: auto; }
+
   .grid-2 {
     width: 14.0%; }
 
@@ -354,6 +360,12 @@ small, .small {
 
   .grid-post-2 {
     margin-right: 17.0%; }
+
+  .wrap-2 {
+    width: 14.0%;
+    max-width: 10.5rem;
+    margin-right: auto;
+    margin-left: auto; }
 
   .grid-3 {
     width: 22%; }
@@ -364,6 +376,12 @@ small, .small {
   .grid-post-3 {
     margin-right: 25%; }
 
+  .wrap-3 {
+    width: 22%;
+    max-width: 16.5rem;
+    margin-right: auto;
+    margin-left: auto; }
+
   .grid-4 {
     width: 30.0%; }
 
@@ -372,6 +390,12 @@ small, .small {
 
   .grid-post-4 {
     margin-right: 33.0%; }
+
+  .wrap-4 {
+    width: 30.0%;
+    max-width: 22.5rem;
+    margin-right: auto;
+    margin-left: auto; }
 
   .grid-5 {
     width: 38.0%; }
@@ -382,6 +406,12 @@ small, .small {
   .grid-post-5 {
     margin-right: 41.0%; }
 
+  .wrap-5 {
+    width: 38.0%;
+    max-width: 28.5rem;
+    margin-right: auto;
+    margin-left: auto; }
+
   .grid-6 {
     width: 46%; }
 
@@ -390,6 +420,12 @@ small, .small {
 
   .grid-post-6 {
     margin-right: 49%; }
+
+  .wrap-6 {
+    width: 46%;
+    max-width: 34.5rem;
+    margin-right: auto;
+    margin-left: auto; }
 
   .grid-7 {
     width: 54%; }
@@ -400,6 +436,12 @@ small, .small {
   .grid-post-7 {
     margin-right: 57%; }
 
+  .wrap-7 {
+    width: 54%;
+    max-width: 40.5rem;
+    margin-right: auto;
+    margin-left: auto; }
+
   .grid-8 {
     width: 62.0%; }
 
@@ -408,6 +450,12 @@ small, .small {
 
   .grid-post-8 {
     margin-right: 65.0%; }
+
+  .wrap-8 {
+    width: 62.0%;
+    max-width: 46.5rem;
+    margin-right: auto;
+    margin-left: auto; }
 
   .grid-9 {
     width: 70%; }
@@ -418,6 +466,12 @@ small, .small {
   .grid-post-9 {
     margin-right: 73%; }
 
+  .wrap-9 {
+    width: 70%;
+    max-width: 52.5rem;
+    margin-right: auto;
+    margin-left: auto; }
+
   .grid-10 {
     width: 78.0%; }
 
@@ -426,6 +480,12 @@ small, .small {
 
   .grid-post-10 {
     margin-right: 81.0%; }
+
+  .wrap-10 {
+    width: 78.0%;
+    max-width: 58.5rem;
+    margin-right: auto;
+    margin-left: auto; }
 
   .grid-11 {
     width: 86.0%; }
@@ -436,6 +496,12 @@ small, .small {
   .grid-post-11 {
     margin-right: 89.0%; }
 
+  .wrap-11 {
+    width: 86.0%;
+    max-width: 64.5rem;
+    margin-right: auto;
+    margin-left: auto; }
+
   .grid-12 {
     width: 94%; }
 
@@ -443,7 +509,13 @@ small, .small {
     margin-left: 97%; }
 
   .grid-post-12 {
-    margin-right: 97%; } }
+    margin-right: 97%; }
+
+  .wrap-12 {
+    width: 94%;
+    max-width: 70.5rem;
+    margin-right: auto;
+    margin-left: auto; } }
 .x25 {
   width: 25%; }
 

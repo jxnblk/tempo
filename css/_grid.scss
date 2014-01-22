@@ -50,6 +50,12 @@ $gutter: 2%;
     .grid-post-#{$i} {
       margin-right: percentage($i/12) + $gutter/2 - 4%/12*$i;
     }
+    .wrap-#{$i} {
+      width: percentage($i/12) - $gutter - 4%/12*$i;
+      max-width: (percentage($i/12) - $gutter - (4%/12*$i))/100% * $max-width;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 }
 
