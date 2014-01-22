@@ -27,18 +27,14 @@ $gutter: 2%;
   @for $i from 1 through 12 {
     .grid-#{$i} {
       width: percentage($i/12) - $gutter;
-      // width: $i * 6%;
     }
     .grid-pre-#{$i} {
-      margin-left: percentage($i/12);
+      margin-left: percentage($i/12) + $gutter/2;
     }
     .grid-post-#{$i} {
-      margin-right: percentage($i/12);
+      margin-right: percentage($i/12) + $gutter/2;
     }
   }
 }
 
-.debugger, .debugger * {
-  outline: 1px solid pink;
-}
 

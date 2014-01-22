@@ -1,9 +1,11 @@
 // Theme
 
 $blue: #0096cc;
+$blue: #0ad;
+// $blueprint: #07a;
 
 body {
-  color: #333;
+  color: #555;
 }
 
 .white { color: #fff; }
@@ -16,6 +18,32 @@ body {
   background-color: $blue;
   &:hover {
     background-color: lighten($blue,10%);
+  }
+}
+
+
+.outline, .outline * {
+  color: rgba($blue,.6);
+  outline: 1px solid rgba($blue, .3);
+  input {
+    border-color: rgba($blue, .6);
+    background-color: rgba(#fff,.2);
+  }
+  .button {
+    background-color: rgba($blue, .2);
+  }
+}
+
+.outline2, .outline2 * {
+  outline: 1px solid rgba($blue, .3);
+
+  input {
+    border-color: rgba($blue, .6);
+    background-color: rgba(#fff,.2);
+  }
+  button {
+    color: #fff;
+    background-color: $blue;
   }
 }
 
