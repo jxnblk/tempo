@@ -319,14 +319,17 @@ small, .small {
   margin-left: auto; }
 
 @media (min-width: 769px) {
-  .grid-row {
+  .grid-row,
+  .wrap {
     overflow: hidden; }
-    .grid-row:before {
+    .grid-row:before,
+    .wrap:before {
       content: ' ';
       float: left;
       width: 2%;
       height: 1px; }
-    .grid-row:after {
+    .grid-row:after,
+    .wrap:after {
       content: ' ';
       float: left;
       width: 2%;
@@ -340,10 +343,10 @@ small, .small {
   .grid-1 {
     width: 6.0%; }
 
-  .grid-pre-1 {
+  .grid--l1 {
     margin-left: 9.0%; }
 
-  .grid-post-1 {
+  .grid--r1 {
     margin-right: 9.0%; }
 
   .wrap-1 {
@@ -355,10 +358,10 @@ small, .small {
   .grid-2 {
     width: 14.0%; }
 
-  .grid-pre-2 {
+  .grid--l2 {
     margin-left: 17.0%; }
 
-  .grid-post-2 {
+  .grid--r2 {
     margin-right: 17.0%; }
 
   .wrap-2 {
@@ -370,10 +373,10 @@ small, .small {
   .grid-3 {
     width: 22%; }
 
-  .grid-pre-3 {
+  .grid--l3 {
     margin-left: 25%; }
 
-  .grid-post-3 {
+  .grid--r3 {
     margin-right: 25%; }
 
   .wrap-3 {
@@ -385,10 +388,10 @@ small, .small {
   .grid-4 {
     width: 30.0%; }
 
-  .grid-pre-4 {
+  .grid--l4 {
     margin-left: 33.0%; }
 
-  .grid-post-4 {
+  .grid--r4 {
     margin-right: 33.0%; }
 
   .wrap-4 {
@@ -400,10 +403,10 @@ small, .small {
   .grid-5 {
     width: 38.0%; }
 
-  .grid-pre-5 {
+  .grid--l5 {
     margin-left: 41.0%; }
 
-  .grid-post-5 {
+  .grid--r5 {
     margin-right: 41.0%; }
 
   .wrap-5 {
@@ -415,10 +418,10 @@ small, .small {
   .grid-6 {
     width: 46%; }
 
-  .grid-pre-6 {
+  .grid--l6 {
     margin-left: 49%; }
 
-  .grid-post-6 {
+  .grid--r6 {
     margin-right: 49%; }
 
   .wrap-6 {
@@ -430,10 +433,10 @@ small, .small {
   .grid-7 {
     width: 54%; }
 
-  .grid-pre-7 {
+  .grid--l7 {
     margin-left: 57%; }
 
-  .grid-post-7 {
+  .grid--r7 {
     margin-right: 57%; }
 
   .wrap-7 {
@@ -445,10 +448,10 @@ small, .small {
   .grid-8 {
     width: 62.0%; }
 
-  .grid-pre-8 {
+  .grid--l8 {
     margin-left: 65.0%; }
 
-  .grid-post-8 {
+  .grid--r8 {
     margin-right: 65.0%; }
 
   .wrap-8 {
@@ -460,10 +463,10 @@ small, .small {
   .grid-9 {
     width: 70%; }
 
-  .grid-pre-9 {
+  .grid--l9 {
     margin-left: 73%; }
 
-  .grid-post-9 {
+  .grid--r9 {
     margin-right: 73%; }
 
   .wrap-9 {
@@ -475,10 +478,10 @@ small, .small {
   .grid-10 {
     width: 78.0%; }
 
-  .grid-pre-10 {
+  .grid--l10 {
     margin-left: 81.0%; }
 
-  .grid-post-10 {
+  .grid--r10 {
     margin-right: 81.0%; }
 
   .wrap-10 {
@@ -490,10 +493,10 @@ small, .small {
   .grid-11 {
     width: 86.0%; }
 
-  .grid-pre-11 {
+  .grid--l11 {
     margin-left: 89.0%; }
 
-  .grid-post-11 {
+  .grid--r11 {
     margin-right: 89.0%; }
 
   .wrap-11 {
@@ -505,10 +508,10 @@ small, .small {
   .grid-12 {
     width: 94%; }
 
-  .grid-pre-12 {
+  .grid--l12 {
     margin-left: 97%; }
 
-  .grid-post-12 {
+  .grid--r12 {
     margin-right: 97%; }
 
   .wrap-12 {

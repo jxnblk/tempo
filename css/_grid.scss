@@ -19,7 +19,8 @@ $gutter: 2%;
 }
 
 @include break(medium-plus){
-  .grid-row {
+  .grid-row,
+  .wrap {
     overflow: hidden;
     // Remove 2% from each side because 96% is divisible by 12
     &:before {
@@ -44,10 +45,10 @@ $gutter: 2%;
     .grid-#{$i} {
       width: percentage($i/12) - $gutter - 4%/12*$i;
     }
-    .grid-pre-#{$i} {
+    .grid--l#{$i} {
       margin-left: percentage($i/12) + $gutter/2 - 4%/12*$i;
     }
-    .grid-post-#{$i} {
+    .grid--r#{$i} {
       margin-right: percentage($i/12) + $gutter/2 - 4%/12*$i;
     }
     .wrap-#{$i} {
