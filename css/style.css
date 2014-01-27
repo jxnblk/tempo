@@ -314,6 +314,7 @@ small, .small {
   left: 0; }
 
 .wrap {
+  overflow: hidden;
   max-width: 75rem;
   margin-right: auto;
   margin-left: auto; }
@@ -339,6 +340,11 @@ small, .small {
     float: left;
     margin-right: 1%;
     margin-left: 1%; }
+    .grid:first-child:before, .grid:last-child:after {
+      content: ' ';
+      float: left;
+      width: 2%;
+      height: 1px; }
 
   .grid-1 {
     width: 6.0%; }
@@ -608,6 +614,9 @@ html, body {
     bottom: 0;
     left: 0; }
 
+.min-y100 {
+  min-height: 100%; }
+
 .y100 {
   height: 100%; }
 
@@ -778,6 +787,9 @@ body {
 
 .bg-blue {
   background-color: #00aadd; }
+
+.bg-pink {
+  background-color: pink; }
 
 .button-blue {
   color: #fff;
