@@ -1,28 +1,7 @@
 /*
 
   BASSCSS
-
-  Part reset, part boilerplate, part framework, all minimal.
-
-  BASSCSS is a small reset and collection of simple type and layout
-  classes that can be used as the basis for any web project.
-  Use it out of the box or as a base for a larger SASS project.
-
-
-  Contents:
-  1. Reset
-  2. Typography
-     a. Default Font Stack
-     b. Base Type Scale
-     c. Responsive Type Scale
-     d. Utilities
-  3. Layout
-     a. Margins
-     b. Padding
-     c. Display
-     d. Utilities
-
-
+  http://jxnblk.github.io/basscss
   Made with love by Jxnblk
 
 */
@@ -41,74 +20,6 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 
 
-// Typography
-
-body {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: 400;
-  line-height: 1.5rem;
-}
-
-h1, .h1, h2, .h2, h3, h4, h5, h6, p, dl, ol, ul {
-  margin-bottom: 1rem;
-}
-
-// Base Type Scale
-
-h1, .h1 {
-  font-size: 2rem;
-  line-height: 3rem;
-}
-
-h2, .h2 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-h3, h4, h5, h6, dl, ol, ul, p, .p {
-  font-size: 1.125rem;
-}
-
-small, .small {
-  font-size: .875rem;
-}
-
-// Responsive Type Scale
-// Apply the .responsive class directly to elements or their parents
-.responsive {
-  @media (min-width: 768px) {
-    .h1, &.h1 {
-      font-size: 4rem;
-      line-height: 5rem;
-    }
-    .h2, &.h2 {
-      font-size: 2rem;
-      line-height: 3rem;
-    }
-    .p, &.p {
-      font-size: 1.25rem;
-    }
-    .small, &.small { font-size: 1rem; }
-  }
-  @media (min-width: 1024px) {
-    .h1, &.h1 {
-      font-size: 6rem;
-      line-height: 8rem;
-    }
-    .h2, &.h2 {
-      font-size: 3rem;
-      line-height: 4rem;
-    }
-  }
-}
-
-// Utilities
-.bold { font-weight: bold; }
-.italic { font-style: italic; }
-.regular { font-weight: normal; }
-.caps { text-transform: uppercase; letter-spacing: .2em; }
-.center { text-align: center; }
-.right-align  { text-align: right; }
 
 
 
@@ -123,6 +34,8 @@ small, .small {
 .mr1 { margin-right: 1rem; }
 .mb1 { margin-bottom: 1rem; }
 .ml1 { margin-left: 1rem; }
+
+.mxn1 { margin-right: -1rem; margin-left: -1rem; }
 
 .m2  { margin: 2rem; }
 .mt2 { margin-top: 2rem; }
@@ -149,6 +62,7 @@ small, .small {
 .p1  { padding: 1rem; }
 .px1 { padding-right: 1rem; padding-left: 1rem; }
 .py1 { padding-top: 1rem; padding-bottom: 1rem; }
+.pr1 { padding-right: 1rem; }
 
 .p2  { padding: 2rem; }
 .px2 { padding-right: 2rem; padding-left: 2rem; }
@@ -168,9 +82,23 @@ small, .small {
 .inline-block { display: inline-block; }
 
 // Utilities
-.clearfix { overflow: hidden; }
+.oh { overflow: hidden; }
 .left { float: left; }
 .right { float: right; }
 
+.clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
 .fit { max-width: 100%; }
+
+.bb { box-sizing: border-box; }
+
 

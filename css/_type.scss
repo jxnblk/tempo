@@ -1,68 +1,69 @@
-// Type
-
-/*
-$base: 1rem;
+// Typography
 
 body {
-  line-height: 1.5*$base;
-}
-h1, .h1 {
-  font-size: 2*$base;
-  line-height: 3*$base;
-}
-h2, .h2 {
-  font-size: 1.5*$base;
-  line-height: 2*$base;
-}
-h3, .h3 {
-  font-size: 1.25*$base;
-  line-height: 2*$base;
-}
-h4, .h4, h5, .h5, p, .p {
-  font-size: 1*$base;
-}
-h6, .h6, small, .small {
-  font-size: .875*$base;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
+h1, h2, h3, h4, h5, h6, p, dl, ol, ul {
+  margin-bottom: 1rem;
+}
+
+// Base Type Scale
+
+h1, .h1 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+h2, .h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h3, h4, h5, h6, dl, ol, ul, p, .p {
+  font-size: 1.125rem;
+}
+
+small, .small {
+  font-size: .875rem;
+}
+
+// Responsive Type Scale
+// Apply the .responsive class directly to elements or their parents
 .responsive {
   @media (min-width: 768px) {
     .h1, &.h1 {
-      font-size: 4*$base;
-      line-height: 5*$base;
+      font-size: 4rem;
+      line-height: 5rem;
     }
     .h2, &.h2 {
-      font-size: 3*$base;
-      line-height: 4*$base;
+      font-size: 2rem;
+      line-height: 3rem;
     }
-    .h3, &.h3 {
-      font-size: 2*$base;
-      line-height: 3*$base;
+    .p, &.p {
+      font-size: 1.25rem;
     }
-    .h4, &.h4, .h5, &.h5, .p, &.p {
-      font-size: 1.125*$base;
-    }
-    .h6, &.h6, .small, &.small {
-      font-size: 1*$base;
-    }
+    .small, &.small { font-size: 1rem; }
   }
   @media (min-width: 1024px) {
     .h1, &.h1 {
-      font-size: 6*$base;
-      line-height: 8*$base;
+      font-size: 6rem;
+      line-height: 8rem;
+    }
+    .h2, &.h2 {
+      font-size: 3rem;
+      line-height: 4rem;
     }
   }
 }
-*/
 
-
-.georgia { font-family: Georgia, serif; }
-.aktive { font-family: "aktiv-grotesk-std" sans-serif; }
-.garamond { font-family: "adobe-garamond-pro"; }
-.tisa { font-family: "ff-tisa-web-pro"; }
-.chaparral { font-family: "chaparral-pro"; }
-.spinoza { font-family: "ff-spinoza-web-pro"; }
-.warnock { font-family: "warnock-pro"; }
-.open-sans { font-family: "open-sans"; }
-.freight-sans { font-family: "freight-sans-pro"; }
+// Utilities
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.regular { font-weight: normal; }
+.caps { text-transform: uppercase; letter-spacing: .2em; }
+.center { text-align: center; }
+.right-align  { text-align: right; }
 

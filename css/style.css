@@ -1,35 +1,7 @@
 /*
 
-  to-do
-  - More form elements
-  - 
-
-*/
-/*
-
   BASSCSS
-
-  Part reset, part boilerplate, part framework, all minimal.
-
-  BASSCSS is a small reset and collection of simple type and layout
-  classes that can be used as the basis for any web project.
-  Use it out of the box or as a base for a larger SASS project.
-
-
-  Contents:
-  1. Reset
-  2. Typography
-     a. Default Font Stack
-     b. Base Type Scale
-     c. Responsive Type Scale
-     d. Utilities
-  3. Layout
-     a. Margins
-     b. Padding
-     c. Display
-     d. Utilities
-
-
+  http://jxnblk.github.io/basscss
   Made with love by Jxnblk
 
 */
@@ -45,66 +17,6 @@ button, input, select, textarea {
 
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
   display: block; }
-
-body {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: 400;
-  line-height: 1.5rem; }
-
-h1, .h1, h2, .h2, h3, h4, h5, h6, p, dl, ol, ul {
-  margin-bottom: 1rem; }
-
-h1, .h1 {
-  font-size: 2rem;
-  line-height: 3rem; }
-
-h2, .h2 {
-  font-size: 1.5rem;
-  line-height: 2rem; }
-
-h3, h4, h5, h6, dl, ol, ul, p, .p {
-  font-size: 1.125rem; }
-
-small, .small {
-  font-size: .875rem; }
-
-@media (min-width: 768px) {
-  .responsive .h1, .responsive.h1 {
-    font-size: 4rem;
-    line-height: 5rem; }
-  .responsive .h2, .responsive.h2 {
-    font-size: 2rem;
-    line-height: 3rem; }
-  .responsive .p, .responsive.p {
-    font-size: 1.25rem; }
-  .responsive .small, .responsive.small {
-    font-size: 1rem; } }
-@media (min-width: 1024px) {
-  .responsive .h1, .responsive.h1 {
-    font-size: 6rem;
-    line-height: 8rem; }
-  .responsive .h2, .responsive.h2 {
-    font-size: 3rem;
-    line-height: 4rem; } }
-
-.bold {
-  font-weight: bold; }
-
-.italic {
-  font-style: italic; }
-
-.regular {
-  font-weight: normal; }
-
-.caps {
-  text-transform: uppercase;
-  letter-spacing: .2em; }
-
-.center {
-  text-align: center; }
-
-.right-align {
-  text-align: right; }
 
 .mb0 {
   margin-bottom: 0; }
@@ -123,6 +35,10 @@ small, .small {
 
 .ml1 {
   margin-left: 1rem; }
+
+.mxn1 {
+  margin-right: -1rem;
+  margin-left: -1rem; }
 
 .m2 {
   margin: 2rem; }
@@ -184,6 +100,9 @@ small, .small {
   padding-top: 1rem;
   padding-bottom: 1rem; }
 
+.pr1 {
+  padding-right: 1rem; }
+
 .p2 {
   padding: 2rem; }
 
@@ -226,7 +145,7 @@ small, .small {
 .inline-block {
   display: inline-block; }
 
-.clearfix {
+.oh {
   overflow: hidden; }
 
 .left {
@@ -235,8 +154,77 @@ small, .small {
 .right {
   float: right; }
 
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table; }
+.clearfix:after {
+  clear: both; }
+
 .fit {
   max-width: 100%; }
+
+.bb {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem; }
+
+h1, h2, h3, h4, h5, h6, p, dl, ol, ul {
+  margin-bottom: 1rem; }
+
+h1, .h1 {
+  font-size: 2rem;
+  line-height: 3rem; }
+
+h2, .h2 {
+  font-size: 1.5rem;
+  line-height: 2rem; }
+
+h3, h4, h5, h6, dl, ol, ul, p, .p {
+  font-size: 1.125rem; }
+
+small, .small {
+  font-size: .875rem; }
+
+@media (min-width: 768px) {
+  .responsive .h1, .responsive.h1 {
+    font-size: 4rem;
+    line-height: 5rem; }
+  .responsive .h2, .responsive.h2 {
+    font-size: 2rem;
+    line-height: 3rem; }
+  .responsive .p, .responsive.p {
+    font-size: 1.25rem; }
+  .responsive .small, .responsive.small {
+    font-size: 1rem; } }
+@media (min-width: 1024px) {
+  .responsive .h1, .responsive.h1 {
+    font-size: 6rem;
+    line-height: 8rem; }
+  .responsive .h2, .responsive.h2 {
+    font-size: 3rem;
+    line-height: 4rem; } }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+.regular {
+  font-weight: normal; }
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: .2em; }
+
+.center {
+  text-align: center; }
+
+.right-align {
+  text-align: right; }
 
 .button {
   font-family: inherit;
@@ -313,218 +301,6 @@ small, .small {
 .l0 {
   left: 0; }
 
-.wrap {
-  overflow: hidden;
-  max-width: 75rem;
-  margin-right: auto;
-  margin-left: auto; }
-
-@media (min-width: 769px) {
-  .grid-row,
-  .wrap {
-    overflow: hidden; }
-    .grid-row:before,
-    .wrap:before {
-      content: ' ';
-      float: left;
-      width: 2%;
-      height: 1px; }
-    .grid-row:after,
-    .wrap:after {
-      content: ' ';
-      float: left;
-      width: 2%;
-      height: 1px; }
-
-  .grid {
-    float: left;
-    margin-right: 1%;
-    margin-left: 1%; }
-    .grid:first-child:before, .grid:last-child:after {
-      content: ' ';
-      float: left;
-      width: 2%;
-      height: 1px; }
-
-  .grid-1 {
-    width: 6.0%; }
-
-  .grid--l1 {
-    margin-left: 9.0%; }
-
-  .grid--r1 {
-    margin-right: 9.0%; }
-
-  .wrap-1 {
-    width: 6.0%;
-    max-width: 4.5rem;
-    margin-right: auto;
-    margin-left: auto; }
-
-  .grid-2 {
-    width: 14.0%; }
-
-  .grid--l2 {
-    margin-left: 17.0%; }
-
-  .grid--r2 {
-    margin-right: 17.0%; }
-
-  .wrap-2 {
-    width: 14.0%;
-    max-width: 10.5rem;
-    margin-right: auto;
-    margin-left: auto; }
-
-  .grid-3 {
-    width: 22%; }
-
-  .grid--l3 {
-    margin-left: 25%; }
-
-  .grid--r3 {
-    margin-right: 25%; }
-
-  .wrap-3 {
-    width: 22%;
-    max-width: 16.5rem;
-    margin-right: auto;
-    margin-left: auto; }
-
-  .grid-4 {
-    width: 30.0%; }
-
-  .grid--l4 {
-    margin-left: 33.0%; }
-
-  .grid--r4 {
-    margin-right: 33.0%; }
-
-  .wrap-4 {
-    width: 30.0%;
-    max-width: 22.5rem;
-    margin-right: auto;
-    margin-left: auto; }
-
-  .grid-5 {
-    width: 38.0%; }
-
-  .grid--l5 {
-    margin-left: 41.0%; }
-
-  .grid--r5 {
-    margin-right: 41.0%; }
-
-  .wrap-5 {
-    width: 38.0%;
-    max-width: 28.5rem;
-    margin-right: auto;
-    margin-left: auto; }
-
-  .grid-6 {
-    width: 46%; }
-
-  .grid--l6 {
-    margin-left: 49%; }
-
-  .grid--r6 {
-    margin-right: 49%; }
-
-  .wrap-6 {
-    width: 46%;
-    max-width: 34.5rem;
-    margin-right: auto;
-    margin-left: auto; }
-
-  .grid-7 {
-    width: 54%; }
-
-  .grid--l7 {
-    margin-left: 57%; }
-
-  .grid--r7 {
-    margin-right: 57%; }
-
-  .wrap-7 {
-    width: 54%;
-    max-width: 40.5rem;
-    margin-right: auto;
-    margin-left: auto; }
-
-  .grid-8 {
-    width: 62.0%; }
-
-  .grid--l8 {
-    margin-left: 65.0%; }
-
-  .grid--r8 {
-    margin-right: 65.0%; }
-
-  .wrap-8 {
-    width: 62.0%;
-    max-width: 46.5rem;
-    margin-right: auto;
-    margin-left: auto; }
-
-  .grid-9 {
-    width: 70%; }
-
-  .grid--l9 {
-    margin-left: 73%; }
-
-  .grid--r9 {
-    margin-right: 73%; }
-
-  .wrap-9 {
-    width: 70%;
-    max-width: 52.5rem;
-    margin-right: auto;
-    margin-left: auto; }
-
-  .grid-10 {
-    width: 78.0%; }
-
-  .grid--l10 {
-    margin-left: 81.0%; }
-
-  .grid--r10 {
-    margin-right: 81.0%; }
-
-  .wrap-10 {
-    width: 78.0%;
-    max-width: 58.5rem;
-    margin-right: auto;
-    margin-left: auto; }
-
-  .grid-11 {
-    width: 86.0%; }
-
-  .grid--l11 {
-    margin-left: 89.0%; }
-
-  .grid--r11 {
-    margin-right: 89.0%; }
-
-  .wrap-11 {
-    width: 86.0%;
-    max-width: 64.5rem;
-    margin-right: auto;
-    margin-left: auto; }
-
-  .grid-12 {
-    width: 94%; }
-
-  .grid--l12 {
-    margin-left: 97%; }
-
-  .grid--r12 {
-    margin-right: 97%; }
-
-  .wrap-12 {
-    width: 94%;
-    max-width: 70.5rem;
-    margin-right: auto;
-    margin-left: auto; } }
 .x25 {
   width: 25%; }
 
@@ -597,182 +373,6 @@ small, .small {
 
   .l-x66 {
     width: 66.66667%; } }
-.bar {
-  min-height: 3rem;
-  line-height: 3rem; }
-
-html, body {
-  height: 100%; }
-
-.banner {
-  width: 100%; }
-  .banner:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0; }
-
-.min-y100 {
-  min-height: 100%; }
-
-.y100 {
-  height: 100%; }
-
-.y75 {
-  height: 75%; }
-
-.y50 {
-  height: 50%; }
-
-.y25 {
-  height: 25%; }
-
-.pull-x12 {
-  margin-left: -12.5%; }
-
-.pull-x25 {
-  margin-left: -25%; }
-
-.pull-x50 {
-  margin-left: -50%; }
-
-.pull-x75 {
-  margin-left: -75%; }
-
-.pull-x33 {
-  margin-left: -percentage(1/3); }
-
-.pull-x66 {
-  margin-left: -percentage(2/3); }
-
-.push-x12 {
-  margin-right: -12.5%; }
-
-.push-x25 {
-  margin-right: -25%; }
-
-.push-x50 {
-  margin-right: -50%; }
-
-.push-x75 {
-  margin-right: -75%; }
-
-.push-x33 {
-  margin-right: -percentage(1/3); }
-
-.push-x66 {
-  margin-right: -percentage(2/3); }
-
-@media (max-width: 640px) {
-  .s-pull-x12 {
-    margin-left: -12.5%; }
-
-  .s-pull-x25 {
-    margin-left: -25%; }
-
-  .s-pull-x50 {
-    margin-left: -50%; }
-
-  .s-pull-x75 {
-    margin-left: -75%; }
-
-  .s-pull-x33 {
-    margin-left: -percentage(1/3); }
-
-  .s-pull-x66 {
-    margin-left: -percentage(2/3); }
-
-  .s-push-x12 {
-    margin-right: -12.5%; }
-
-  .s-push-x25 {
-    margin-right: -25%; }
-
-  .s-push-x50 {
-    margin-right: -50%; }
-
-  .s-push-x75 {
-    margin-right: -75%; }
-
-  .s-push-x33 {
-    margin-right: -percentage(1/3); }
-
-  .s-push-x66 {
-    margin-right: -percentage(2/3); } }
-@media (min-width: 641px) and (max-width: 1024px) {
-  .m-pull-x12 {
-    margin-left: -12.5%; }
-
-  .m-pull-x25 {
-    margin-left: -25%; }
-
-  .m-pull-x50 {
-    margin-left: -50%; }
-
-  .m-pull-x75 {
-    margin-left: -75%; }
-
-  .m-pull-x33 {
-    margin-left: -percentage(1/3); }
-
-  .m-pull-x66 {
-    margin-left: -percentage(2/3); }
-
-  .m-push-x12 {
-    margin-right: -12.5%; }
-
-  .m-push-x25 {
-    margin-right: -25%; }
-
-  .m-push-x50 {
-    margin-right: -50%; }
-
-  .m-push-x75 {
-    margin-right: -75%; }
-
-  .m-push-x33 {
-    margin-right: -percentage(1/3); }
-
-  .m-push-x66 {
-    margin-right: -percentage(2/3); } }
-@media (min-width: 1024px) {
-  .l-pull-x12 {
-    margin-left: -12.5%; }
-
-  .l-pull-x25 {
-    margin-left: -25%; }
-
-  .l-pull-x50 {
-    margin-left: -50%; }
-
-  .l-pull-x75 {
-    margin-left: -75%; }
-
-  .l-pull-x33 {
-    margin-left: -percentage(1/3); }
-
-  .l-pull-x66 {
-    margin-left: -percentage(2/3); }
-
-  .l-push-x12 {
-    margin-right: -12.5%; }
-
-  .l-push-x25 {
-    margin-right: -25%; }
-
-  .l-push-x50 {
-    margin-right: -50%; }
-
-  .l-push-x75 {
-    margin-right: -75%; }
-
-  .l-push-x33 {
-    margin-right: -percentage(1/3); }
-
-  .l-push-x66 {
-    margin-right: -percentage(2/3); } }
 body {
   color: #555; }
 
@@ -815,36 +415,234 @@ body {
     color: #fff;
     background-color: #00aadd; }
 
-.georgia {
-  font-family: Georgia, serif; }
+.x1 {
+  width: 8.33333%; }
 
-.aktive {
-  font-family: "aktiv-grotesk-std" sans-serif; }
+.mlx1 {
+  margin-left: 8.33333%; }
 
-.garamond {
-  font-family: "adobe-garamond-pro"; }
+.mrx1 {
+  margin-right: 8.33333%; }
 
-.tisa {
-  font-family: "ff-tisa-web-pro"; }
+.x2 {
+  width: 16.66667%; }
 
-.chaparral {
-  font-family: "chaparral-pro"; }
+.mlx2 {
+  margin-left: 16.66667%; }
 
-.spinoza {
-  font-family: "ff-spinoza-web-pro"; }
+.mrx2 {
+  margin-right: 16.66667%; }
 
-.warnock {
-  font-family: "warnock-pro"; }
+.x3 {
+  width: 25%; }
 
-.open-sans {
-  font-family: "open-sans"; }
+.mlx3 {
+  margin-left: 25%; }
 
-.freight-sans {
-  font-family: "freight-sans-pro"; }
+.mrx3 {
+  margin-right: 25%; }
+
+.x4 {
+  width: 33.33333%; }
+
+.mlx4 {
+  margin-left: 33.33333%; }
+
+.mrx4 {
+  margin-right: 33.33333%; }
+
+.x5 {
+  width: 41.66667%; }
+
+.mlx5 {
+  margin-left: 41.66667%; }
+
+.mrx5 {
+  margin-right: 41.66667%; }
+
+.x6 {
+  width: 50%; }
+
+.mlx6 {
+  margin-left: 50%; }
+
+.mrx6 {
+  margin-right: 50%; }
+
+.x7 {
+  width: 58.33333%; }
+
+.mlx7 {
+  margin-left: 58.33333%; }
+
+.mrx7 {
+  margin-right: 58.33333%; }
+
+.x8 {
+  width: 66.66667%; }
+
+.mlx8 {
+  margin-left: 66.66667%; }
+
+.mrx8 {
+  margin-right: 66.66667%; }
+
+.x9 {
+  width: 75%; }
+
+.mlx9 {
+  margin-left: 75%; }
+
+.mrx9 {
+  margin-right: 75%; }
+
+.x10 {
+  width: 83.33333%; }
+
+.mlx10 {
+  margin-left: 83.33333%; }
+
+.mrx10 {
+  margin-right: 83.33333%; }
+
+.x11 {
+  width: 91.66667%; }
+
+.mlx11 {
+  margin-left: 91.66667%; }
+
+.mrx11 {
+  margin-right: 91.66667%; }
+
+.x12 {
+  width: 100%; }
+
+.mlx12 {
+  margin-left: 100%; }
+
+.mrx12 {
+  margin-right: 100%; }
+
+html, body {
+  height: 100%; }
+
+.banner {
+  width: 100%; }
+  .banner:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+
+.min-y100 {
+  min-height: 100%; }
+
+.y100 {
+  height: 100%; }
+
+.y75 {
+  height: 75%; }
+
+.y50 {
+  height: 50%; }
+
+.y25 {
+  height: 25%; }
 
 .show-baseline {
   background-image: url(../images/baseline-16.svg);
   background-size: .5rem .5rem; }
 
-.baseline-ksr {
-  background-size: 10px 10px; }
+/*
+ *
+ * Some messy, messy notes
+
+  - Add more form elements
+
+  - BASSCSS include file
+
+  _breakpoints
+  _prefixer
+  _keyframes
+
+  _margins
+  _padding
+  _utilities
+    _display
+    _float
+  _type
+    - more typeface utils in tempo
+  _lists
+  _forms
+    - input type text
+    - input type text with icon
+    - textarea
+    - input type submit
+    - disabled input
+    - button
+    - radio
+    - checkbox
+    - selects
+    - select multiple
+    - fieldsets
+    - file input
+    - html5 drop area uploader
+  _positions
+  _grid
+    - g widths
+    - g margins
+    - g padding
+    - g wraps -- .wrap .wrap--g8 
+    - gutters ?
+
+  _theme
+    - sample themes
+
+  # Tempo for typefaces
+  _webfonts
+  _merriweather
+  _open-sans
+  _source-code-pro
+  _source-sans-pro
+
+  _oswald & _lato
+  _typekit fonts
+  
+  _debugger
+
+  # Abbreviated naming conventions
+  #
+  # abcdefghijklmnopqrstuvwxyz
+  # i1 i3  g3  g4  c1  c4  c8  c12 g12 c12 g12 
+  #
+  # mx-x8 ml-x8 mlx8  x12 x1 x2 
+  #
+  # mxg4 mxx8 mlx8 mrx8 mri8 mrg8 mlg8 mxc3 mlc2 mrc2  mrg8 mlg3  pxc3 pxg3 pxi3  o2 o4 o6  
+  # pxo3 mxo3  mxn3 n2 n5 n5 
+  #
+  # pxx1 pxx2 pxx3 px1 px3   pxg2 
+
+  block-word-separator
+  block_element
+  block--modifier
+
+  x - x-axis
+  y - y-axis
+  z - z-axis
+
+  t, r, b, l - top, right, bottom, left
+
+  p - padding
+  m - margin
+
+  bp1 - breakpoint 1
+  bp2 - breakpoint 2
+  bp3 - breakpoint 3
+  alternates: b1 - b3; v1 - v3 (viewport); w1 - w3 (width); 
+
+  g - grid column width (1 = 1/12)
+  alternates: c (column or cell); x (width) - could be confused with direction; 
+
+*/

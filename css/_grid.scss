@@ -24,12 +24,7 @@ $gutter: 2%;
   .wrap {
     overflow: hidden;
     // Remove 2% from each side because 96% is divisible by 12
-    &:before {
-      content: ' ';
-      float: left;
-      width: 2%;
-      height: 1px;
-    }
+    &:before,
     &:after {
       content: ' ';
       float: left;
@@ -37,17 +32,14 @@ $gutter: 2%;
       height: 1px;
     }
   }
+  // attempt to remove extra padding introduced from subtracting 4% from 100%
+  .wrap--bleed {
+    //margin-left: -2% * 100% / 96%;
+  }
   .grid {
     float: left;
     margin-right: $gutter/2;
     margin-left: $gutter/2;
-    &:first-child:before,
-    &:last-child:after {
-      content: ' ';
-      float: left;
-      width: 2%;
-      height: 1px;
-    }
   }
   @for $i from 1 through 12 {
     .grid-#{$i} {

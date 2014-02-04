@@ -1,45 +1,124 @@
 // Tempo
 // Type scale with vertical rhythm
 
-/*
-
-  to-do
-  - More form elements
-  - 
-
-*/
 
 @import "breakpoints";
+// @import "prefixer";
 
 @import "basscss";
+@import "type";
+// @import "margins";
+// @import "padding";
+// @import "layout";
+// @import "layout";
 @import "forms";
 @import "positions";
-@import "grid";
 @import "widths";
-@import "bar";
-@import "banners";
-@import "shift";
+
 
 @import "theme";
 
-.georgia { font-family: Georgia, serif; }
-.aktive { font-family: "aktiv-grotesk-std" sans-serif; }
-.garamond { font-family: "adobe-garamond-pro"; }
-.tisa { font-family: "ff-tisa-web-pro"; }
-.chaparral { font-family: "chaparral-pro"; }
-.spinoza { font-family: "ff-spinoza-web-pro"; }
-.warnock { font-family: "warnock-pro"; }
-.open-sans { font-family: "open-sans"; }
-.freight-sans { font-family: "freight-sans-pro"; }
-
+// Clean up
+@import "x";
+@import "banners";
+// @import "shift";
+// @import "bar";
 
 .show-baseline {
   background-image: url(../images/baseline-16.svg);
-  // background-size: .5rem .5rem;
   background-size: .5rem .5rem;
 }
-.baseline-ksr {
-  background-size: 10px 10px;
-}
 
+
+/*
+ *
+ * Some messy, messy notes
+
+  - Add more form elements
+
+  - BASSCSS include file
+
+  _breakpoints
+  _prefixer
+  _keyframes
+
+  _margins
+  _padding
+  _utilities
+    _display
+    _float
+  _type
+    - more typeface utils in tempo
+  _lists
+  _forms
+    - input type text
+    - input type text with icon
+    - textarea
+    - input type submit
+    - disabled input
+    - button
+    - radio
+    - checkbox
+    - selects
+    - select multiple
+    - fieldsets
+    - file input
+    - html5 drop area uploader
+  _positions
+  _grid
+    - g widths
+    - g margins
+    - g padding
+    - g wraps -- .wrap .wrap--g8 
+    - gutters ?
+
+  _theme
+    - sample themes
+
+  # Tempo for typefaces
+  _webfonts
+  _merriweather
+  _open-sans
+  _source-code-pro
+  _source-sans-pro
+
+  _oswald & _lato
+  _typekit fonts
+  
+  _debugger
+
+  # Abbreviated naming conventions
+  #
+  # abcdefghijklmnopqrstuvwxyz
+  # i1 i3  g3  g4  c1  c4  c8  c12 g12 c12 g12 
+  #
+  # mx-x8 ml-x8 mlx8  x12 x1 x2 
+  #
+  # mxg4 mxx8 mlx8 mrx8 mri8 mrg8 mlg8 mxc3 mlc2 mrc2  mrg8 mlg3  pxc3 pxg3 pxi3  o2 o4 o6  
+  # pxo3 mxo3  mxn3 n2 n5 n5 
+  #
+  # pxx1 pxx2 pxx3 px1 px3   pxg2 
+
+  block-word-separator
+  block_element
+  block--modifier
+
+  x - x-axis
+  y - y-axis
+  z - z-axis
+
+  t, r, b, l - top, right, bottom, left
+
+  p - padding
+  m - margin
+
+  bp1 - breakpoint 1
+  bp2 - breakpoint 2
+  bp3 - breakpoint 3
+  alternates: b1 - b3; v1 - v3 (viewport); w1 - w3 (width); 
+
+  g - grid column width (1 = 1/12)
+  alternates: c (column or cell); x (width) - could be confused with direction; 
+
+*/
 

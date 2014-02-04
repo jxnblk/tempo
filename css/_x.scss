@@ -1,0 +1,16 @@
+// x util
+
+$columns: 12;
+
+@for $i from 1 through $columns {
+  .x#{$i} {
+    width: percentage($i/$columns);
+  }
+  .mlx#{$i} {
+    margin-left: percentage($i/$columns);
+  }
+  .mrx#{$i} {
+    margin-right: percentage($i/$columns);
+  }
+}
+
