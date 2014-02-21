@@ -1,0 +1,55 @@
+// Flex grid
+
+
+
+
+// max-width of 75rem (1200px) sets 1 column to 4.5rem (72px)
+$max-width: 75rem;
+$gutter: 2%;
+
+$mobile-breakpoint: 40rem;
+
+.rg-row {
+  overflow: hidden;
+  max-width: $max-width;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Rem grid
+@media (min-width: $mobile-breakpoint) {
+  .rg-row {
+    // Remove 2% from each side because 96% is divisible by 12
+    &:before,
+    &:after {
+      content: ' ';
+      float: left;
+      width: 2%;
+      height: 1px;
+    }
+  }
+  .rg {
+    float: left;
+    margin-right: $gutter/2;
+    margin-left: $gutter/2;
+  }
+  @for $i from 1 through 12 {
+    .rg#{$i} {
+      width: percentage($i/12) - $gutter - 4%/12*$i;
+    }
+    .rg-pre-#{$i} {
+      margin-left: percentage($i/12) + $gutter/2 - 4%/12*$i;
+    }
+    .rg-post-#{$i} {
+      margin-right: percentage($i/12) + $gutter/2 - 4%/12*$i;
+    }
+    .rg-wrap-#{$i} {
+      width: percentage($i/12) - $gutter - 4%/12*$i;
+      max-width: (percentage($i/12) - $gutter - (4%/12*$i))/100% * $max-width;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+
