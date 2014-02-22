@@ -34,7 +34,7 @@
       }
     }
     @if ($i % 2 == 0 and $i > 3) {
-      .wrap-grid-#{$i} {
+      .centered-grid-#{$i} {
         width: percentage($i/12) - $gutter + ($gutter * $i / 12);
         max-width: (percentage($i/12) - $gutter +($gutter * $i / 12))/100% * $max-width;
         margin-right: auto;
