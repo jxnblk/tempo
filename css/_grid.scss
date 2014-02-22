@@ -1,63 +1,46 @@
 // Grid
-//
-// Usage:
-// <div class="wrap">
-//   <div class="grid-row">
-//     <div class="grid grid-4"> </div>
-//     <div class="grid grid-8"> </div>
-//   </div>
-// </div>
 
-// max-width of 75rem (1200px) sets 1 column to 4.5rem (72px)
-$max-width: 75rem;
-$gutter: 2%;
-
-.wrap {
-  overflow: hidden;
+.container {
   max-width: $max-width;
   margin-right: auto;
   margin-left: auto;
 }
 
-@include break(medium-plus){
-  .grid-row,
-  .wrap {
-    overflow: hidden;
-    // Remove 2% from each side because 96% is divisible by 12
-    &:before,
-    &:after {
-      content: ' ';
-      float: left;
-      width: 2%;
-      height: 1px;
-    }
-  }
-  // attempt to remove extra padding introduced from subtracting 4% from 100%
-  .wrap--bleed {
-    //margin-left: -2% * 100% / 96%;
-  }
+@media (min-width: $bp1) {
   .grid {
     float: left;
-    margin-right: $gutter/2;
     margin-left: $gutter/2;
+    margin-right: $gutter/2;
+    &:first-child { margin-left: 0; }
+    &:last-child { margin-right: 0; }
   }
+
   @for $i from 1 through 12 {
     .grid-#{$i} {
-      width: percentage($i/12) - $gutter - 4%/12*$i;
+      width: percentage($i/12) - $gutter + ($gutter * $i / 12);
     }
-    .grid--l#{$i} {
-      margin-left: percentage($i/12) + $gutter/2 - 4%/12*$i;
+    @if ($i < $pre-post-max + 1) and ($i < 12) {
+      .grid-pre-#{$i} {
+        margin-left: percentage($i/12) + ($gutter * $i / 12) + $gutter/2;
+        &:first-child {
+          margin-left: percentage($i/12) + ($gutter * $i / 12);
+        }
+      }
+      .grid-post-#{$i} {
+        margin-right: percentage($i/12) + ($gutter * $i / 12) + $gutter/2;
+        &:last-child {
+          margin-right: percentage($i/12) + ($gutter * $i / 12);
+        }
+      }
     }
-    .grid--r#{$i} {
-      margin-right: percentage($i/12) + $gutter/2 - 4%/12*$i;
-    }
-    .wrap-#{$i} {
-      width: percentage($i/12) - $gutter - 4%/12*$i;
-      max-width: (percentage($i/12) - $gutter - (4%/12*$i))/100% * $max-width;
-      margin-right: auto;
-      margin-left: auto;
+    @if ($i % 2 == 0 and $i > 3) {
+      .wrap-grid-#{$i} {
+        width: percentage($i/12) - $gutter + ($gutter * $i / 12);
+        max-width: (percentage($i/12) - $gutter +($gutter * $i / 12))/100% * $max-width;
+        margin-right: auto;
+        margin-left: auto;
+      }
     }
   }
 }
-
 

@@ -1,0 +1,34 @@
+/*
+ 
+  TEMPO
+
+  Responsive layout modules for BASSCSS
+  http://jxnblk.github.io/tempo
+
+  Made with love by Jxnblk (c)2014 Brent Jackson
+  MIT License http://opensource.org/licenses/MIT
+ 
+*/
+
+// Variables
+
+// .container max-width
+$max-width: 75rem;
+// Grid and tile gutter
+$gutter: 3%;
+// Include .grid-pre-x and .grid-post-x styles
+$pre-post: true;
+// Maximum level of pre/post classes to generate
+$pre-post-max: 2;
+
+// Breakpoints
+$bp1: 36rem;
+$bp2: 60rem;
+$bp3: 75rem;
+
+
+// Imports
+@import "grid";
+@import "tiles";
+
+
