@@ -33,19 +33,24 @@ $orange: #fc2;
 .bg-green { background-color: $green; }
 .bg-orange { background-color: $orange; }
 
+.bg-darken-1 { background-color: rgba(#000, .1); }
+.bg-darken-2 { background-color: rgba(#000, .2); }
+.bg-darken-3 { background-color: rgba(#000, .3); }
+
 
 // Base theme styles
 
 body {
-  color: rgba(#fff,.9);
+  color: rgba(#fff,.7);
   background-color: $blue;
 }
 
 a {
-  color: $blue;
+  color: #fff;
   text-decoration: none;
   &:hover {
-    color: darken($blue, 10%);
+    //color: darken($blue, 10%);
+    text-decoration: underline;
   }
 }
 
@@ -59,7 +64,19 @@ a {
   transition-property: box-shadow , background-color;
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 2px #fff, 0 0 1px 4px rgba($blue, .5);
+    //box-shadow: 0 0 0 2px #fff, 0 0 1px 4px rgba($blue, .5);
+  }
+  //
+  //-webkit-font-smoothing: antialiased;
+}
+
+.button-box {
+  box-shadow: 0 0 0 2px #fff;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background-color: $blue;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px $blue, 0 0 0 6px rgba(#fff, .6);
   }
 }
 
@@ -115,20 +132,26 @@ a {
 
 .border {
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
 }
 .border-top {
   border-top-style: solid;
-  border-top-width: 1px;
+  border-top-width: 2px;
 }
 
 .border-light-gray {
   border-color: $light-gray;
 }
 
+// Box-shadow border
+.box { box-shadow: 0 0 0 2px rgba(#fff, .5); }
+
 // Utilities
 .rounded { border-radius: .25rem; }
 .transition-all { transition: all .2s ease; }
 
-.outline, .outline * { outline: 1px solid rgba(#fff, .2); }
+//.outline, .outline * { outline: 1px solid rgba(#fff, .2); }
+.outline, .outline * { outline: 1px solid rgba(darken($blue, 20%), .2); }
+
+.show-baseline { background-image: url(../images/baseline-16.svg); }
 

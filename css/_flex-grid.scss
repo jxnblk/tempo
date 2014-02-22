@@ -3,12 +3,72 @@
 
 
 
-// max-width of 75rem (1200px) sets 1 column to 4.5rem (72px)
+// max-width of 75rem (1200px) 
 $max-width: 75rem;
-$gutter: 2%;
+//$gutter: 2%;
+// 1.5rem gutter at max-width 75rem
+
+$gutter: 3%;
+// 2.25rem gutter at max-width 75rem
+
+//$gutter: 4%;
+// 3rem gutter at max-width 75rem
 
 $mobile-breakpoint: 40rem;
 
+$border-box: true;
+
+// Full flex grid
+.container {
+  max-width: $max-width;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: $mobile-breakpoint) {
+  .grid {
+    float: left;
+    margin-left: $gutter/2;
+    margin-right: $gutter/2;
+    &:first-child { margin-left: 0; }
+    &:last-child { margin-right: 0; }
+    @if $border-box { box-sizing: border-box; }
+  }
+  @for $i from 1 through 12 {
+    .grid-#{$i} {
+      //width: percentage($i/12) - $gutter;
+      width: percentage($i/12) - $gutter + ($gutter * $i / 12);
+
+      // Max 1200px (75rem)
+      // grid-1: 100 - 24 + (24 * 1/12) = 78px
+      // grid-2: 200 - 24 + (24 * 2/12) = 180px
+      // grid-3: 300 - 24 + (24 * 3/12) = 282px
+      // grid-4: 400 - 24 + (24 * 4/12) = 384px
+      //
+    }
+    .grid-pre-#{$i} {
+      margin-left: percentage($i/12) + $gutter/2;
+    }
+    .grid-post-#{$i} {
+      margin-right: percentage($i/12) + $gutter/2;
+    }
+    .wrap-grid-#{$i} {
+      width: percentage($i/12) - $gutter;
+      max-width: (percentage($i/12) - $gutter)/100% * $max-width;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+
+
+
+
+// REM flex grid
+// Use 2% before and after to make nice even numbers at full width
+
+// max-width of 75rem (1200px) sets 1 column to 4.5rem (72px)
 .rg-row {
   overflow: hidden;
   max-width: $max-width;
