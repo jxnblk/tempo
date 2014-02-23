@@ -18,7 +18,7 @@ Start with a generic clearfix container, like the one found in BASSCSS.
 </div>
 ```
 
-Add the `.container` class to limit the max-width. Note: this is optional, but `.centered-grid-X` classes will not properly align with the grid without this.
+Add the `.container` class to limit the max-width. Note: this is optional, but `.centered-grid-X` classes will not properly align to the grid without this.
 
 ```html
 <div class="clearfix container">
@@ -75,6 +75,7 @@ Use the centered grid classes to create single columns that line up with the gri
 ```
 
 Note: centered grid is only available at these sizes: 4, 6, 8, & 10.
+
 Note: centered grid elements are not floated, so there's no need for a clearfix.
 
 ## Tiles
