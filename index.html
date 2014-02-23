@@ -11,17 +11,16 @@
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
 </head>
 
-<body class="show-baseline">
+<body class="xshow-baseline px2">
 
-  <header class="container px2 py4">
+  <header class="container py4 show-baseline">
     <h1 class="px1 caps h2 inline-block box">Tempo</h1>
     <p class="p">Responsive layout modules for BASSCSS</p>
   </header>
 
-  <section id="grid" class="container px2 py4 outline">
-    <div class="py1">
-      <h1 class="h3 caps mb0">12 Column Flexible Grid System</h1>
-    </div>
+  <section id="grid" class="container py4 outline show-baseline">
+    <h1 class="h3 caps mb0">12 Column Flexible Grid System</h1>
+    <p>You probably don't need a grid system, but here you go</p>
     <div class="clearfix h2 bold py1">
       <div class="grid grid-8 py1 box">.grid-8</div>
       <div class="grid grid-4 py1 box">.grid-4</div>
@@ -76,7 +75,7 @@
     </div>
   </section>
 
-  <section id="mobile-grid" class="container px2 py4 outline">
+  <section id="mobile-grid" class="container py4 outline show-baseline">
     <h1 class="h3 caps mb0">Mobile Grid</h1>
     <p>Works at all screen widths</p>
     <div class="clearfix py1">
@@ -104,54 +103,23 @@
     </div>
   </section>
 
-  <section id="centered-columns" class="container px2 py4 outline">
-    <div class="py1">
-      <h1 class="h3 caps mb0">Centered Single Columns</h1>
-      <p class="">Non-floated, max-width based columns</p>
-    </div>
-    <div class="clearfix">
-      <div class="grid grid-1">.grid-1</div>
-      <div class="grid grid-10">.grid-10</div>
-      <div class="grid grid-1">.grid-1</div>
-    </div>
-    <div class="centered-grid-10 py2 box">
+  <section id="centered-columns" class="container py4 outline show-baseline">
+    <h1 class="h3 caps mb0">Centered Single Columns</h1>
+    <p class="">Non-floated, max-width based columns</p>
+    <div class="centered-grid-10 py2 mb2 box">
       <h2 class="h2">.centered-grid-10</h2>
     </div>
-    <div class="clearfix">
-      <div class="grid grid-2">.grid-2</div>
-      <div class="grid grid-8">.grid-8</div>
-      <div class="grid grid-2">.grid-2</div>
-    </div>
-    <div class="centered-grid-8 py2 box">
+    <div class="centered-grid-8 py2 mb2 box">
       <h2 class="h2">.centered-grid-8</div>
-    </div>
-    <div class="clearfix">
-      <div class="grid grid-3">.grid-3</div>
-      <div class="grid grid-6">.grid-6</div>
-      <div class="grid grid-3">.grid-3</div>
     </div>
     <div class="centered-grid-6 py2 box">
       <h2 class="h2">.centered-grid-6</h2>
     </div>
   </section>
 
-  <section id="tiles" class="container px2 py4 outline">
+  <section id="tiles" class="container py4 outline show-baseline">
     <h2 class="h3 caps mb0">Tiles</h2>
     <p>Alternative layout module for collections</p>
-    <div class="clearfix mb1">
-      <div class="grid grid-1">.grid-1</div>
-      <div class="grid grid-1">.grid-1</div>
-      <div class="grid grid-1">.grid-1</div>
-      <div class="grid grid-1">.grid-1</div>
-      <div class="grid grid-1">.grid-1</div>
-      <div class="grid grid-1">.grid-1</div>
-      <div class="grid grid-1">.grid-1</div>
-      <div class="grid grid-1">.grid-1</div>
-      <div class="grid grid-1">.grid-1</div>
-      <div class="grid grid-1">.grid-1</div>
-      <div class="grid grid-1">.grid-1</div>
-      <div class="grid grid-1">.grid-1</div>
-    </div>
     <div class="clearfix h3">
       <div class="tile-large py1 mb1 box">.tile-large</div>
       <div class="tile-large py1 mb1 box">.tile-large</div>
@@ -167,41 +135,43 @@
       <div class="tile-large py1 mb1 box">.tile-large</div>
     </div>
     <div class="clearfix p">
-      <div class="tile-medium py1 mb1">.tile-medium</div>
-      <div class="tile-medium py1 mb1">.tile-medium</div>
-      <div class="tile-medium py1 mb1">.tile-medium</div>
-      <div class="tile-medium py1 mb1">.tile-medium</div>
-      <div class="tile-medium py1 mb1">.tile-medium</div>
-      <div class="tile-medium py1 mb1">.tile-medium</div>
-      <div class="tile-medium py1 mb1">.tile-medium</div>
-      <div class="tile-medium py1 mb1">.tile-medium</div>
-      <div class="tile-medium py1 mb1">.tile-medium</div>
-      <div class="tile-medium py1 mb1">.tile-medium</div>
-      <div class="tile-medium py1 mb1">.tile-medium</div>
-      <div class="tile-medium py1">.tile-medium</div>
+      <div class="tile-medium py1 mb1 outline">.tile-medium</div>
+      <div class="tile-medium py1 mb1 outline">.tile-medium</div>
+      <div class="tile-medium py1 mb1 outline">.tile-medium</div>
+      <div class="tile-medium py1 mb1 outline">.tile-medium</div>
+      <div class="tile-medium py1 mb1 outline">.tile-medium</div>
+      <div class="tile-medium py1 mb1 outline">.tile-medium</div>
+      <div class="tile-medium py1 mb1 outline">.tile-medium</div>
+      <div class="tile-medium py1 mb1 outline">.tile-medium</div>
+      <!--
+      <div class="tile-medium py1 mb1 outline">.tile-medium</div>
+      <div class="tile-medium py1 mb1 outline">.tile-medium</div>
+      <div class="tile-medium py1 mb1 outline">.tile-medium</div>
+      <div class="tile-medium py1 mb1 outline">.tile-medium</div>
+      -->
     </div>
     <div class="clearfix small">
-      <div class="tile-small py1 mb1">.tile-small</div>
-      <div class="tile-small py1 mb1">.tile-small</div>
-      <div class="tile-small py1 mb1">.tile-small</div>
-      <div class="tile-small py1 mb1">.tile-small</div>
-      <div class="tile-small py1 mb1">.tile-small</div>
-      <div class="tile-small py1 mb1">.tile-small</div>
-      <div class="tile-small py1 mb1">.tile-small</div>
-      <div class="tile-small py1 mb1">.tile-small</div>
-      <div class="tile-small py1 mb1">.tile-small</div>
-      <div class="tile-small py1 mb1">.tile-small</div>
-      <div class="tile-small py1 mb1">.tile-small</div>
-      <div class="tile-small py1 mb1">.tile-small</div>
+      <div class="tile-small py1 mb1 outline">.tile-small</div>
+      <div class="tile-small py1 mb1 outline">.tile-small</div>
+      <div class="tile-small py1 mb1 outline">.tile-small</div>
+      <div class="tile-small py1 mb1 outline">.tile-small</div>
+      <div class="tile-small py1 mb1 outline">.tile-small</div>
+      <div class="tile-small py1 mb1 outline">.tile-small</div>
+      <div class="tile-small py1 mb1 outline">.tile-small</div>
+      <div class="tile-small py1 mb1 outline">.tile-small</div>
+      <div class="tile-small py1 mb1 outline">.tile-small</div>
+      <div class="tile-small py1 mb1 outline">.tile-small</div>
+      <div class="tile-small py1 mb1 outline">.tile-small</div>
+      <div class="tile-small py1 mb1 outline">.tile-small</div>
     </div>
   </section>
 
 
-  <section id="cta" class="container px2 py4">
+  <section id="cta" class="container py4">
     <a href="//github.com/jxnblk/tempo" class="button button-big button-box caps ">View on Github</a>
   </section>
 
-  <footer class="container p2">
+  <footer class="container py2">
     <p>Made with love by <a href="//jxnblk.com">Jxnblk</a></p>
   </footer>
 
