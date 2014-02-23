@@ -72,8 +72,8 @@ Use the centered grid classes to create single columns that line up with the gri
 <div class="centered-grid-8">Centered single column</div>
 ```
 
-Please note:
-- Centered grid elements are not floated and contain themselves, so there's no need for a clearfix.
+Note:
+- Centered grid elements are not floated and contain themselves, so there's no need for a clearfix or parent container.
 - Centered grid is only available at these sizes: 4, 6, 8, & 10.
 
 
