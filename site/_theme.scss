@@ -27,6 +27,7 @@ $dark-gray: #333;
 .reverse {
   color: $blue;
   background-color: rgba(#fff,.8);
+  box-shadow: inset 0 0 4rem rgba($blue, .4);
 }
 
 // Base theme styles
@@ -34,6 +35,7 @@ $dark-gray: #333;
 body {
   color: rgba(#fff,.9);
   background-color: $blue;
+  box-shadow: inset 0 0 9rem rgba($dark-blue, .8);
 }
 
 a {
@@ -52,7 +54,7 @@ a {
   border-radius: .25rem;
   transition-duration: .2s;
   transition-timing-function: ease;
-  transition-property: box-shadow , background-color;
+  transition-property: box-shadow , background-color, transform;
   &:focus {
     outline: none;
     //box-shadow: 0 0 0 2px #fff, 0 0 1px 4px rgba($blue, .5);
@@ -74,12 +76,19 @@ a {
 .button-white {
   color: $dark-blue;
   background-color: rgba(#fff,.8);
+  box-shadow: inset 0 0 4rem rgba($blue, .4);
   &:focus,
   &:hover {
     text-decoration: none;
     color: $dark-blue;
     background-color: #fff;
     box-shadow: 0 0 0 2px $blue, 0 0 0 4px rgba(#fff, .6);
+    -webkit-transform: scale(1.0625);
+    transform: scale(1.25);
+  }
+  &:active {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -106,5 +115,34 @@ a {
 .bg-grid {
   background-image: url(grid-rules.svg);
   background-size: 100% 1rem;
+}
+
+.box-over {
+  position: relative;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    opacity: .5;
+  }
+  &:before {
+    left: -5%;
+    top: 0; bottom: 0;
+    width: 110%;
+    height: 100%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: 0;
+    width: 100%;
+    height: 120%;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
 }
 
