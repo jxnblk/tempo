@@ -3,7 +3,7 @@
 Responsive CSS Layout Modules
 http://jxnblk.github.io/tempo
 
-Tempo is designed to work well independently, but is built in the same spirit as BASSCSS. Mix and match as you see fit.
+Tempo is designed to work well independently, but is built in the same spirit as [BASSCSS](http://jxnblk.github.io/basscss). Mix and match as you see fit.
 
 ## Basic Usage
 Use the vanilla CSS files or import the files in the `scss/` folder with SASS. Set custom variables in the `_variables.scss` partial.
@@ -69,14 +69,13 @@ Use mobile grid classes as a base, then add default grid width classes to adjust
 Use the centered grid classes to create single columns that line up with the grid.
 
 ```html
-<div class="container">
-  <div class="centered-grid-8">Centered single column</div>
-</div>
+<div class="centered-grid-8">Centered single column</div>
 ```
 
-Note: centered grid is only available at these sizes: 4, 6, 8, & 10.
+Please note:
+- Centered grid elements are not floated and contain themselves, so there's no need for a clearfix.
+- Centered grid is only available at these sizes: 4, 6, 8, & 10.
 
-Note: centered grid elements are not floated, so there's no need for a clearfix.
 
 ## Tiles
 Tiles are automatically resizing containers intended for collections of items, such as thumbnails.
