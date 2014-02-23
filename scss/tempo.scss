@@ -10,24 +10,7 @@
  
 */
 
-// Variables
-
-// .container max-width
-$max-width: 75rem !default;
-
-// Grid and tile gutter
-$gutter: 3% !default;
-
-// Maximum level of pre/post classes to generate
-$pre-post-max: 2 !default;
-
-// Breakpoints
-$bp1: 36rem !default;
-$bp2: 60rem !default;
-$bp3: 75rem !default;
-
-// Imports
+@import "variables";
 @import "grid";
 @import "tiles";
-
 
