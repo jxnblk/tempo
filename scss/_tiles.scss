@@ -31,14 +31,14 @@
 }
 
 .tile-small {
-  @include build-tile((3, 6, 9, 12));
+  @include build-tile( (3, 6, 9, 12) );
 }
 
 .tile-medium {
   @include build-tile( (2, 4, 6, 8) );
 }
 
-.tile-large {
+.tile-big {
   @include build-tile( (1, 2, 3, 4) );
 }
 

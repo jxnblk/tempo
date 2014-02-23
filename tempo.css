@@ -245,32 +245,32 @@
 }
 
 @media (min-width: 36rem) {
-  .tile-large {
+  .tile-big {
     float: left;
     margin-right: 3%;
   }
 }
 @media (min-width: 36rem) and (max-width: 60rem) {
-  .tile-large {
+  .tile-big {
     width: 48.5%;
   }
-  .tile-large:nth-child(2n) {
+  .tile-big:nth-child(2n) {
     margin-right: 0;
   }
 }
 @media (min-width: 60rem) and (max-width: 75rem) {
-  .tile-large {
+  .tile-big {
     width: 31.33333%;
   }
-  .tile-large:nth-child(3n) {
+  .tile-big:nth-child(3n) {
     margin-right: 0;
   }
 }
 @media (min-width: 75rem) {
-  .tile-large {
+  .tile-big {
     width: 22.75%;
   }
-  .tile-large:nth-child(4n) {
+  .tile-big:nth-child(4n) {
     margin-right: 0;
   }
 }
