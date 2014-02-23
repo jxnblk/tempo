@@ -1,43 +1,33 @@
-// Example theme
-//
-// Edit these styles to adjust the look and feel of your site
+// Tempo theme
 
-
-$blue: #0096cc;
 $blue: #00b9ef;
+$dark-blue: #00669f;
 $light-gray: #eee;
 $mid-gray: #777;
 $dark-gray: #333;
 
-$red: #f52;
-$green: #0f6;
-$orange: #fc2;
-
-
 .white { color: #fff; }
 .blue { color: $blue; }
+.dark-blue { color: $dark-blue; }
 .light-gray { color: $light-gray; }
 .mid-gray { color: $mid-gray; }
 .dark-gray { color: $dark-gray; }
 
-.red { color: $red; }
-.green { color: $green; }
-.orange { color: $orange; }
-
 .bg-white { background-color: #fff; }
 .bg-blue { background-color: $blue; }
+.bg-dark-blue { background-color: rgba($dark-blue,.8); }
 .bg-light-gray { background-color: $light-gray; }
 .bg-mid-gray { background-color: $mid-gray; }
 .bg-dark-gray { background-color: $dark-gray; }
-
-.bg-red { background-color: $red; }
-.bg-green { background-color: $green; }
-.bg-orange { background-color: $orange; }
 
 .bg-darken-1 { background-color: rgba(#000, .1); }
 .bg-darken-2 { background-color: rgba(#000, .2); }
 .bg-darken-3 { background-color: rgba(#000, .3); }
 
+.reverse {
+  color: $blue;
+  background-color: rgba(#fff,.8);
+}
 
 // Base theme styles
 
@@ -81,81 +71,38 @@ a {
   }
 }
 
+.button-white {
+  color: $dark-blue;
+  background-color: rgba(#fff,.8);
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: $dark-blue;
+    background-color: #fff;
+    box-shadow: 0 0 0 2px $blue, 0 0 0 4px rgba(#fff, .6);
+  }
+}
+
 .button-blue {
   color: #fff;
-  background-color: $blue;
+  background-color: $dark-blue;
   &:hover {
     color: #fff;
-    background-color: darken($blue, 20%);
-  }
-}
-
-.button-gray {
-  color: #fff;
-  background-color: $mid-gray;
-  &:hover {
-    color: #fff;
-    background-color: darken($mid-gray, 20%);
-  }
-  &:focus {}
-}
-
-
-// Forms
-
-.form-light {
-  .input,
-  .textarea,
-  .select {
-    transition: box-shadow .2s ease;
-    border-color: $mid-gray;
-    &:focus {
-      outline: none;
-      border-color: $blue;
-      box-shadow: 0 0 .125rem rgba($blue,.5);
-    }
-  }
-  .radio input,
-  .checkbox input {
-    transition: box-shadow .2s ease;
-    &:focus {
-      outline: none;
-      box-shadow: 0 0 0 2px #fff, 0 0 1px 4px rgba($blue, .5);
-    }
-  }
-  .radio input {
-    border-radius: 50%;
+    background-color: darken($dark-blue, 20%);
   }
 }
 
 
-// Borders
 
-.border {
-  border-style: solid;
-  border-width: 2px;
-}
-.border-top {
-  border-top-style: solid;
-  border-top-width: 2px;
-}
 
-.border-light-gray {
-  border-color: $light-gray;
-}
 
 // Utilities
 .rounded { border-radius: .25rem; }
-.transition-all { transition: all .2s ease; }
 
-// This is a terrible selector, I strongly DO NOT recommend doing this
+
 .outline { box-shadow: inset 0 0 0 1px rgba(darken($blue, 20%), .2); }
+.box { box-shadow: inset 0 0 0 2px rgba(#fff, .5); }
 
-// Box-shadow border
-.box, .outline .box { box-shadow: inset 0 0 0 2px rgba(#fff, .5); }
-
-
-//.show-baseline { background-image: url(baseline-16.svg); }
 .bg-grid {
   background-image: url(grid-rules.svg);
   background-size: 100% 1rem;

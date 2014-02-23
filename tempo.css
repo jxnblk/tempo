@@ -17,14 +17,10 @@
 
 .mobile-grid {
   float: left;
-  margin-left: 1.5%;
-  margin-right: 1.5%;
+  margin-left: 3%;
 }
 .mobile-grid:first-child {
   margin-left: 0;
-}
-.mobile-grid:last-child {
-  margin-right: 0;
 }
 
 .mobile-grid-1 {
@@ -74,14 +70,10 @@
 @media (min-width: 36rem) {
   .grid {
     float: left;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
+    margin-left: 3%;
   }
   .grid:first-child {
     margin-left: 0;
-  }
-  .grid:last-child {
-    margin-right: 0;
   }
 
   .grid-1 {
@@ -89,16 +81,13 @@
   }
 
   .grid-pre-1 {
-    margin-left: 10.08333%;
+    margin-left: 11.58333%;
   }
   .grid-pre-1:first-child {
     margin-left: 8.58333%;
   }
 
   .grid-post-1 {
-    margin-right: 10.08333%;
-  }
-  .grid-post-1:last-child {
     margin-right: 8.58333%;
   }
 
@@ -107,16 +96,13 @@
   }
 
   .grid-pre-2 {
-    margin-left: 18.66667%;
+    margin-left: 20.16667%;
   }
   .grid-pre-2:first-child {
     margin-left: 17.16667%;
   }
 
   .grid-post-2 {
-    margin-right: 18.66667%;
-  }
-  .grid-post-2:last-child {
     margin-right: 17.16667%;
   }
 

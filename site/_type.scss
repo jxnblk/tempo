@@ -8,6 +8,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
+code, pre {
+  font-family: 'Source Code Pro' monospace;
+  font-size: 1rem;
+  overflow: auto;
+}
 
 
 // Base Type Scale
