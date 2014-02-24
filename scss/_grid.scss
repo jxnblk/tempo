@@ -20,7 +20,7 @@
 }
 
 // Desktop grid
-@media (min-width: $bp1) {
+@media screen and (min-width: $bp1) {
   .grid, .mobile-grid {
     float: left;
     margin-left: $gutter;

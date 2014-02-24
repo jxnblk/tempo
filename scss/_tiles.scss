@@ -6,24 +6,24 @@
   @if nth($columns, 1) > 1 {
     float: left;
     margin-left: $gutter;
-    @media (max-width: $bp1) {
+    @media screen and (max-width: $bp1) {
       width: percentage(1/$x) - $gutter + $gutter / $x;
       &:nth-child(#{$x}n + 1) { margin-left: 0; clear: left; }
     }
   } @else {
-    @media (min-width: $bp1) { float: left; margin-left: $gutter; }
+    @media screen and (min-width: $bp1) { float: left; margin-left: $gutter; }
   }
-  @media (min-width: $bp1) and (max-width: $bp2) {
+  @media screen and (min-width: $bp1) and (max-width: $bp2) {
     $x: nth($columns, 2);
     width: percentage(1/$x) - $gutter + $gutter / $x;
     &:nth-child(#{$x}n + 1) { margin-left: 0; clear: left; }
   }
-  @media (min-width: $bp2) and (max-width: $bp3) {
+  @media screen and (min-width: $bp2) and (max-width: $bp3) {
     $x: nth($columns, 3);
     width: percentage(1/$x) - $gutter + $gutter / $x;
     &:nth-child(#{$x}n + 1) { margin-left: 0; clear: left; }
   }
-  @media (min-width: $bp3) {
+  @media screen and (min-width: $bp3) {
     $x: nth($columns, 4);
     width: percentage(1/$x) - $gutter + $gutter / $x;
     &:nth-child(#{$x}n + 1) { margin-left: 0; clear: left; }
