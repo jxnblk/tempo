@@ -9,26 +9,26 @@
 // Mobile grid
 .mobile-grid {
   float: left;
-  margin-left: $gutter;
+  margin-left: $gutter*2;
   &:first-child { margin-left: 0; }
 }
 
 @for $i from 1 through 11 {
   .mobile-grid-#{$i} {
-    width: percentage($i/12) - $gutter + ($gutter * $i / 12);
+    width: percentage($i/12) - ($gutter * 2) + ($gutter * 2 * $i / 12);
   }
 }
 
 // Desktop grid
 @media (min-width: $bp1) {
-  .grid {
+  .grid, .mobile-grid {
     float: left;
     margin-left: $gutter;
     &:first-child { margin-left: 0; }
   }
 
   @for $i from 1 through 11 {
-    .grid-#{$i} {
+    .grid-#{$i}, .mobile-grid-#{$i} {
       width: percentage($i/12) - $gutter + ($gutter * $i / 12);
     }
     @if ($i < $pre-post-max + 1) and ($i < 12) {

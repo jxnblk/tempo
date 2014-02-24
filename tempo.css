@@ -17,66 +17,66 @@
 
 .mobile-grid {
   float: left;
-  margin-left: 3%;
+  margin-left: 6%;
 }
 .mobile-grid:first-child {
   margin-left: 0;
 }
 
 .mobile-grid-1 {
-  width: 5.58333%;
+  width: 2.83333%;
 }
 
 .mobile-grid-2 {
-  width: 14.16667%;
+  width: 11.66667%;
 }
 
 .mobile-grid-3 {
-  width: 22.75%;
+  width: 20.5%;
 }
 
 .mobile-grid-4 {
-  width: 31.33333%;
+  width: 29.33333%;
 }
 
 .mobile-grid-5 {
-  width: 39.91667%;
+  width: 38.16667%;
 }
 
 .mobile-grid-6 {
-  width: 48.5%;
+  width: 47%;
 }
 
 .mobile-grid-7 {
-  width: 57.08333%;
+  width: 55.83333%;
 }
 
 .mobile-grid-8 {
-  width: 65.66667%;
+  width: 64.66667%;
 }
 
 .mobile-grid-9 {
-  width: 74.25%;
+  width: 73.5%;
 }
 
 .mobile-grid-10 {
-  width: 82.83333%;
+  width: 82.33333%;
 }
 
 .mobile-grid-11 {
-  width: 91.41667%;
+  width: 91.16667%;
 }
 
 @media (min-width: 36rem) {
-  .grid {
+  .grid, .mobile-grid {
     float: left;
     margin-left: 3%;
   }
-  .grid:first-child {
+  .grid:first-child, .mobile-grid:first-child {
     margin-left: 0;
   }
 
-  .grid-1 {
+  .grid-1, .mobile-grid-1 {
     width: 5.58333%;
   }
 
@@ -91,7 +91,7 @@
     margin-right: 8.58333%;
   }
 
-  .grid-2 {
+  .grid-2, .mobile-grid-2 {
     width: 14.16667%;
   }
 
@@ -106,11 +106,11 @@
     margin-right: 17.16667%;
   }
 
-  .grid-3 {
+  .grid-3, .mobile-grid-3 {
     width: 22.75%;
   }
 
-  .grid-4 {
+  .grid-4, .mobile-grid-4 {
     width: 31.33333%;
   }
 
@@ -121,11 +121,11 @@
     margin-left: auto;
   }
 
-  .grid-5 {
+  .grid-5, .mobile-grid-5 {
     width: 39.91667%;
   }
 
-  .grid-6 {
+  .grid-6, .mobile-grid-6 {
     width: 48.5%;
   }
 
@@ -136,11 +136,11 @@
     margin-left: auto;
   }
 
-  .grid-7 {
+  .grid-7, .mobile-grid-7 {
     width: 57.08333%;
   }
 
-  .grid-8 {
+  .grid-8, .mobile-grid-8 {
     width: 65.66667%;
   }
 
@@ -151,11 +151,11 @@
     margin-left: auto;
   }
 
-  .grid-9 {
+  .grid-9, .mobile-grid-9 {
     width: 74.25%;
   }
 
-  .grid-10 {
+  .grid-10, .mobile-grid-10 {
     width: 82.83333%;
   }
 
@@ -166,7 +166,7 @@
     margin-left: auto;
   }
 
-  .grid-11 {
+  .grid-11, .mobile-grid-11 {
     width: 91.41667%;
   }
 }
