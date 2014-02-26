@@ -1,0 +1,36 @@
+// Table grid
+
+.table-grid {
+  display: table;
+  width: 100% + $gutter;
+  margin-left: -$gutter;
+  overflow: hidden;
+  table-layout: fixed;
+}
+.table-grid-align-middle .cell {
+  vertical-align: middle;
+}
+  // Alternative gutter extension method
+  .table-grid-gutters {
+    margin-left: -$gutter;
+    width: 100% + $gutter;
+  }
+
+  .table-grid-fixed {
+    table-layout: fixed;
+  }
+
+.cell {
+  display: table-cell;
+  padding-left: $gutter;
+  //&:first-child {
+  //  padding-left: 0;
+  //}
+}
+
+@for $i from 1 through 12 {
+  .cell-#{$i} {
+    width: percentage($i/12) - $gutter + ($gutter * $i /12);
+  }
+}
+
