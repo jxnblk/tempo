@@ -287,7 +287,7 @@
 }
 
 @media screen and (min-width: 36em) {
-  .table-grid {
+  .table {
     display: table;
     width: 103%;
     margin-left: -3%;
@@ -295,69 +295,12 @@
     table-layout: fixed;
   }
 
-  .table-grid-align-middle .cell {
+  .table-align-middle .cell {
     vertical-align: middle;
-  }
-
-  .table-grid-gutters {
-    margin-left: -3%;
-    width: 103%;
-  }
-
-  .table-grid-fixed {
-    table-layout: fixed;
   }
 
   .cell {
     display: table-cell;
     padding-left: 3%;
-  }
-
-  .cell-1 {
-    width: 5.58333%;
-  }
-
-  .cell-2 {
-    width: 14.16667%;
-  }
-
-  .cell-3 {
-    width: 22.75%;
-  }
-
-  .cell-4 {
-    width: 31.33333%;
-  }
-
-  .cell-5 {
-    width: 39.91667%;
-  }
-
-  .cell-6 {
-    width: 48.5%;
-  }
-
-  .cell-7 {
-    width: 57.08333%;
-  }
-
-  .cell-8 {
-    width: 65.66667%;
-  }
-
-  .cell-9 {
-    width: 74.25%;
-  }
-
-  .cell-10 {
-    width: 82.83333%;
-  }
-
-  .cell-11 {
-    width: 91.41667%;
-  }
-
-  .cell-12 {
-    width: 100%;
   }
 }
