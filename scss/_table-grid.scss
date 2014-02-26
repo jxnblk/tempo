@@ -1,36 +1,35 @@
 // Table grid
 
-.table-grid {
-  display: table;
-  width: 100% + $gutter;
-  margin-left: -$gutter;
-  overflow: hidden;
-  table-layout: fixed;
-}
-.table-grid-align-middle .cell {
-  vertical-align: middle;
-}
-  // Alternative gutter extension method
-  .table-grid-gutters {
-    margin-left: -$gutter;
+@media screen and (min-width: $bp1) {
+  .table-grid {
+    display: table;
     width: 100% + $gutter;
-  }
-
-  .table-grid-fixed {
+    margin-left: -$gutter;
+    overflow: hidden;
     table-layout: fixed;
   }
+  .table-grid-align-middle .cell {
+    vertical-align: middle;
+  }
+    // Alternative gutter extension method
+    .table-grid-gutters {
+      margin-left: -$gutter;
+      width: 100% + $gutter;
+    }
 
-.cell {
-  display: table-cell;
-  padding-left: $gutter;
-  //&:first-child {
-  //  padding-left: 0;
-  //}
-}
+    .table-grid-fixed {
+      table-layout: fixed;
+    }
 
-@for $i from 1 through 12 {
-  .cell-#{$i} {
-    width: percentage($i/12) - $gutter + ($gutter * $i /12);
+  .cell {
+    display: table-cell;
+    padding-left: $gutter;
+  }
+
+  @for $i from 1 through 12 {
+    .cell-#{$i} {
+      width: percentage($i/12) - $gutter + ($gutter * $i /12);
+    }
   }
 }
 
