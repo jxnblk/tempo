@@ -9,15 +9,10 @@
     table-layout: fixed;
   }
 
-  // Extension for vertically aligning to center
-  .table-align-middle .cell {
-    vertical-align: middle;
-  }
-
   .cell {
     display: table-cell;
     padding-left: $gutter;
+    vertical-align: middle;
   }
-
 }
 

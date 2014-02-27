@@ -5,6 +5,13 @@ http://jxnblk.github.io/tempo
 
 Tempo is designed to work well independently, but is built in the same spirit as [BASSCSS](http://jxnblk.github.io/basscss). Mix and match as you see fit.
 
+## Modules Included
+- Simple 12 column flexible grid
+- Mobile 12 column grid
+- Table grid
+- Centered grid-aligned single columns
+- Tile object
+
 ## Basic Usage
 Use the vanilla CSS files or import the files in the `scss/` folder with SASS. Set custom variables in the `_variables.scss` partial.
 
@@ -65,7 +72,19 @@ Use mobile grid classes as a base, then add default grid width classes to adjust
 </div>
 ```
 
-## Centered Grid
+## Table Grid
+Useful for vertically centering rows of content. Combine with `.grid-X` classes to control width.
+
+```html
+<div class="container">
+  <div class="table">
+    <div class="cell grid-5">Vertically centered cell</div>
+    <div class="cell grid-7"></div>
+  </div>
+</div>
+```
+
+## Centered Single Columns
 Use the centered grid classes to create single columns that line up with the grid.
 
 ```html

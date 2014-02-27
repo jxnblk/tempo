@@ -295,12 +295,9 @@
     table-layout: fixed;
   }
 
-  .table-align-middle .cell {
-    vertical-align: middle;
-  }
-
   .cell {
     display: table-cell;
     padding-left: 3%;
+    vertical-align: middle;
   }
 }
