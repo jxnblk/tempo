@@ -1,11 +1,11 @@
 // Table grid
 
 @media screen and (min-width: $bp1) {
+
   .table {
     display: table;
     width: 100% + $gutter;
     margin-left: -$gutter;
-    overflow: hidden;
     table-layout: fixed;
   }
 
@@ -14,5 +14,6 @@
     padding-left: $gutter;
     vertical-align: middle;
   }
+
 }
 

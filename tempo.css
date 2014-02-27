@@ -291,7 +291,6 @@
     display: table;
     width: 103%;
     margin-left: -3%;
-    overflow: hidden;
     table-layout: fixed;
   }
 
