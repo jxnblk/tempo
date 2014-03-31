@@ -14,12 +14,12 @@
   margin-right: auto;
   margin-left: auto; }
 
+.grid-container {
+  margin-right: -1rem;
+  margin-left: -1rem; }
+
 .mobile-grid {
-  float: left;
-  box-sizing: border-box;
-  padding-left: 4rem; }
-  .mobile-grid:first-child {
-    padding-left: 0; }
+  float: left; }
 
 .mobile-grid-1 {
   width: 8.33333%; }
@@ -54,13 +54,15 @@
 .mobile-grid-11 {
   width: 91.66667%; }
 
+.grid,
+.mobile-grid {
+  box-sizing: border-box;
+  padding-right: 1rem;
+  padding-left: 1rem; }
+
 @media screen and (min-width: 36em) {
   .grid {
-    float: left;
-    box-sizing: border-box; }
-
-  .grid, .mobile-grid {
-    padding-left: 2rem; }
+    float: left; }
 
   .grid-1, .mobile-grid-1 {
     width: 8.33333%; }

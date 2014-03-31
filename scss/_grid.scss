@@ -6,12 +6,17 @@
   margin-left: auto;
 }
 
+.grid-container {
+  margin-right: -$gutter/2;
+  margin-left: -$gutter/2;
+}
+
 // Mobile grid
 .mobile-grid {
   float: left;
-  box-sizing: border-box;
-  padding-left: $gutter*2;
-  &:first-child { padding-left: 0; }
+  //box-sizing: border-box;
+  //padding-left: $gutter*2;
+  //&:first-child { padding-left: 0; }
 }
 
 @for $i from 1 through 11 {
@@ -20,20 +25,27 @@
   }
 }
 
+.grid,
+.mobile-grid {
+  box-sizing: border-box;
+  padding-right: $gutter/2;
+  padding-left: $gutter/2;
+}
+
 // Desktop grid
 @media screen and (min-width: $bp1) {
   .grid {
     float: left;
-    box-sizing: border-box;
+    //box-sizing: border-box;
   }
   .grid, .mobile-grid {
-    padding-left: $gutter;
+    //padding-left: $gutter;
     //&:first-child { padding-left: 0; }
   }
 
   @for $i from 1 through 11 {
     .grid-#{$i}, .mobile-grid-#{$i} {
-      width: percentage($i/12) ;
+      width: percentage($i/12);
       &:first-child {
         //width: percentage($i/12) ;
         //margin-left: -$gutter;
