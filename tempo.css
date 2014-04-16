@@ -16,8 +16,8 @@
 
 .row {
   overflow: hidden;
-  margin-right: -1rem;
-  margin-left: -1rem; }
+  margin-right: -0.75rem;
+  margin-left: -0.75rem; }
 
 .col,
 .col-right,
@@ -25,8 +25,8 @@
 .mobile-col,
 .px-gutter {
   box-sizing: border-box;
-  padding-right: 1rem;
-  padding-left: 1rem; }
+  padding-right: 0.75rem;
+  padding-left: 0.75rem; }
 
 .mobile-col {
   float: left; }
@@ -121,16 +121,16 @@
     width: 91.66667%; }
 
   .measure-col-8 {
-    max-width: 49.33333rem;
+    max-width: 49.5rem;
     margin-right: auto;
     margin-left: auto; }
 
   .measure-col-6 {
-    max-width: 36.5rem;
+    max-width: 36.75rem;
     margin-right: auto;
     margin-left: auto; }
 
   .measure-col-10 {
-    max-width: 62.16667rem;
+    max-width: 62.25rem;
     margin-right: auto;
     margin-left: auto; } }

@@ -74,8 +74,8 @@ a {
 
 .button-box {
   font-weight: 600;
-  color: $blue;
-  box-shadow: 0 0 0 2px $blue;
+  //color: $blue;
+  box-shadow: 0 0 0 2px;
   &:hover,
   &:focus {
     color: #fff;
@@ -123,14 +123,8 @@ a {
 
 
 .outline { box-shadow: inset 0 0 0 1px rgba(darken($blue, 20%), .2); }
-.box { box-shadow: inset 0 0 0 2px rgba($dark-gray, .5); }
-
-.bg-grid {
-  //background-image: url(grid-rules.svg);
-  //background-size: 100% 1rem;
-}
-
-.box-over {
+.box {
+  box-shadow: inset 0 0 0 2px rgba($mid-gray,.25);
   position: relative;
   &:before,
   &:after {
@@ -144,8 +138,8 @@ a {
     top: 0; bottom: 0;
     width: 105%;
     height: 100%;
-    border-top: 1px solid $dark-gray;
-    border-bottom: 1px solid $dark-gray;
+    border-top: 1px solid rgba($mid-gray,.25);
+    border-bottom: 1px solid rgba($mid-gray,.25);
   }
   &:after {
     content: '';
@@ -154,8 +148,8 @@ a {
     right: 0;
     width: 100%;
     height: 120%;
-    border-left: 1px solid $dark-gray;
-    border-right: 1px solid $dark-gray;
+    border-left: 1px solid rgba($mid-gray,.25);
+    border-right: 1px solid rgba($mid-gray,.25);
   }
 }
 
