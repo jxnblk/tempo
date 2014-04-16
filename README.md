@@ -1,45 +1,52 @@
 # Tempo
 
-Responsive CSS Layout Modules
+Responsive Grid System
 http://jxnblk.github.io/tempo
 
 Tempo is designed to work well independently, but is built in the same spirit as [BASSCSS](http://jxnblk.github.io/basscss). Mix and match as you see fit.
 
 ## Basic Usage
-Use the vanilla CSS files or import the files in the `scss/` folder with SASS. Set custom variables in the `_variables.scss` partial.
+Use the vanilla CSS files or import the `scss/tempo.scss` file with SASS.
+Set custom variables within the same file or in a separate variables file.
 
 ## Grid
-The default grid only kicks in at a set breakpoint.
+The default grid only kicks in at a set breakpoint `$breakpoint`.
 
-Start with a generic clearfix container, like the one found in BASSCSS.
+Start with an optional container to set a max-width.
 
 ```html
-<div class="clearfix">
+<div class="container">
 </div>
 ```
 
-Add the `.container` class to limit the max-width. Note: this is optional, but `.centered-grid-X` classes will not properly align to the grid without this.
+Wrap each row of grid columns with the `row` class.
 
 ```html
-<div class="clearfix container">
+<div class="container">
+  <div class="row">
+  </div>
 </div>
 ```
 
-Use the `.grid` class to float elements left. Add a grid width class to control width. Make sure the total number of columns adds up to 12.
+Use the `.col` class to float elements left. Add a column width class to control width. Make sure the total number of columns adds up to 12.
 
 ```html
-<div class="clearfix container">
-  <div class="grid grid-4">4 columns wide</div>
-  <div class="grid grid-8">8 columns wide</div>
+<div class="container">
+  <div class="row">
+    <div class="col col-4">4 columns wide</div>
+    <div class="col col-8">8 columns wide</div>
+  </div>
 </div>
 ```
 
-Use `.grid-pre-X` and `.grid-post-X` classes to add spacing between columns.
+Use `.col-pre-X` and `.col-post-X` classes to add spacing between columns.
 
 ```html
-<div class="clearfix container">
-  <div class="grid grid-4">4 columns</div>
-  <div class="grid grid-7 grid-pre-1">7 columns with space to the left</div>
+<div class="container">
+  <div class="row">
+    <div class="col col-4">4 columns</div>
+    <div class="col col-7 col-pre-1">7 columns with space to the left</div>
+  </div>
 </div>
 ```
 
