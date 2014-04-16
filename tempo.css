@@ -2,7 +2,7 @@
  
   TEMPO
 
-  Responsive layout modules for BASSCSS
+  Flexible grid system
   http://jxnblk.github.io/tempo
 
   Made with love by Jxnblk (c)2014 Brent Jackson
@@ -14,125 +14,123 @@
   margin-right: auto;
   margin-left: auto; }
 
-.grid-container {
+.row {
+  overflow: hidden;
   margin-right: -1rem;
   margin-left: -1rem; }
 
-.mobile-grid {
-  float: left; }
-
-.mobile-grid-1 {
-  width: 8.33333%; }
-
-.mobile-grid-2 {
-  width: 16.66667%; }
-
-.mobile-grid-3 {
-  width: 25%; }
-
-.mobile-grid-4 {
-  width: 33.33333%; }
-
-.mobile-grid-5 {
-  width: 41.66667%; }
-
-.mobile-grid-6 {
-  width: 50%; }
-
-.mobile-grid-7 {
-  width: 58.33333%; }
-
-.mobile-grid-8 {
-  width: 66.66667%; }
-
-.mobile-grid-9 {
-  width: 75%; }
-
-.mobile-grid-10 {
-  width: 83.33333%; }
-
-.mobile-grid-11 {
-  width: 91.66667%; }
-
-.grid,
-.mobile-grid {
+.col,
+.col-right,
+.col-center,
+.mobile-col,
+.px-gutter {
   box-sizing: border-box;
   padding-right: 1rem;
   padding-left: 1rem; }
 
+.mobile-col {
+  float: left; }
+
+.mobile-col-1 {
+  width: 8.33333%; }
+
+.mobile-col-2 {
+  width: 16.66667%; }
+
+.mobile-col-3 {
+  width: 25%; }
+
+.mobile-col-4 {
+  width: 33.33333%; }
+
+.mobile-col-5 {
+  width: 41.66667%; }
+
+.mobile-col-6 {
+  width: 50%; }
+
+.mobile-col-7 {
+  width: 58.33333%; }
+
+.mobile-col-8 {
+  width: 66.66667%; }
+
+.mobile-col-9 {
+  width: 75%; }
+
+.mobile-col-10 {
+  width: 83.33333%; }
+
+.mobile-col-11 {
+  width: 91.66667%; }
+
 @media screen and (min-width: 36em) {
-  .grid {
+  .col {
     float: left; }
 
-  .grid-1, .mobile-grid-1 {
+  .col-right {
+    float: right; }
+
+  .col-center {
+    margin-right: auto;
+    margin-left: auto; }
+
+  .col-1 {
     width: 8.33333%; }
 
-  .grid-pre-1 {
+  .col-pre-1 {
     margin-left: 8.33333%; }
 
-  .grid-post-1 {
+  .col-post-1 {
     margin-right: 8.33333%; }
 
-  .grid-2, .mobile-grid-2 {
+  .col-2 {
     width: 16.66667%; }
 
-  .grid-pre-2 {
+  .col-pre-2 {
     margin-left: 16.66667%; }
 
-  .grid-post-2 {
+  .col-post-2 {
     margin-right: 16.66667%; }
 
-  .grid-3, .mobile-grid-3 {
+  .col-3 {
     width: 25%; }
 
-  .grid-4, .mobile-grid-4 {
+  .col-4 {
     width: 33.33333%; }
 
-  .centered-grid-4 {
-    width: 33.33333%;
-    box-sizing: border-box;
-    padding-left: 2rem;
-    margin-right: auto;
-    margin-left: auto; }
-
-  .grid-5, .mobile-grid-5 {
+  .col-5 {
     width: 41.66667%; }
 
-  .grid-6, .mobile-grid-6 {
+  .col-6 {
     width: 50%; }
 
-  .centered-grid-6 {
-    width: 50%;
-    box-sizing: border-box;
-    padding-left: 2rem;
-    margin-right: auto;
-    margin-left: auto; }
-
-  .grid-7, .mobile-grid-7 {
+  .col-7 {
     width: 58.33333%; }
 
-  .grid-8, .mobile-grid-8 {
+  .col-8 {
     width: 66.66667%; }
 
-  .centered-grid-8 {
-    width: 66.66667%;
-    box-sizing: border-box;
-    padding-left: 2rem;
-    margin-right: auto;
-    margin-left: auto; }
-
-  .grid-9, .mobile-grid-9 {
+  .col-9 {
     width: 75%; }
 
-  .grid-10, .mobile-grid-10 {
+  .col-10 {
     width: 83.33333%; }
 
-  .centered-grid-10 {
-    width: 83.33333%;
-    box-sizing: border-box;
-    padding-left: 2rem;
+  .col-11 {
+    width: 91.66667%; }
+
+  .measure-col-8 {
+    max-width: 49.33333rem;
     margin-right: auto;
     margin-left: auto; }
 
-  .grid-11, .mobile-grid-11 {
-    width: 91.66667%; } }
+  .measure-col-6 {
+    max-width: 36.5rem;
+    margin-right: auto;
+    margin-left: auto; }
+
+  .measure-col-10 {
+    max-width: 62.16667rem;
+    margin-right: auto;
+    margin-left: auto; } }

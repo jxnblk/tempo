@@ -2,7 +2,7 @@
  
   TEMPO
 
-  Responsive layout modules for BASSCSS
+  Flexible grid system
   http://jxnblk.github.io/tempo
 
   Made with love by Jxnblk (c)2014 Brent Jackson
@@ -10,7 +10,80 @@
  
 */
 
-@import "variables";
-@import "grid";
-//@import "tiles";
+
+// Tempo Variables
+
+// .container max-width
+$max-width: 75rem !default;
+
+// Grid gutter
+$gutter: 2rem;
+
+// Maximum level of pre/post classes to generate
+$pre-post-max: 2 !default;
+
+// Breakpoint
+$breakpoint: 36em !default;
+
+
+
+// Grid
+
+.container {
+  max-width: $max-width;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  overflow: hidden;
+  margin-right: -$gutter/2;
+  margin-left: -$gutter/2;
+}
+
+.col,
+.col-right,
+.col-center,
+.mobile-col,
+.px-gutter {
+  box-sizing: border-box;
+  padding-right: $gutter/2;
+  padding-left: $gutter/2;
+}
+
+// Mobile grid
+.mobile-col { float: left; }
+@for $i from 1 through 11 {
+  .mobile-col-#{$i} { width: percentage($i/12); }
+}
+
+
+// Desktop grid
+@media screen and (min-width: $breakpoint) {
+  .col { float: left; }
+  .col-right { float: right; }
+  .col-center { margin-right: auto; margin-left: auto; }
+  @for $i from 1 through 11 {
+    .col-#{$i} { width: percentage($i/12); }
+    @if ($i < $pre-post-max + 1) and ($i < 12) {
+      .col-pre-#{$i} { margin-left: percentage($i/12); }
+      .col-post-#{$i} { margin-right: percentage($i/12); }
+    }
+  }
+  .measure-col-8 {
+    max-width: (8/12 * ($max-width + $gutter)) - $gutter;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .measure-col-6 {
+    max-width: (6/12 * ($max-width + $gutter)) - $gutter;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .measure-col-10 {
+    max-width: (10/12 * ($max-width + $gutter)) - $gutter;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
