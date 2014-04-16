@@ -3,16 +3,16 @@
 Responsive Grid System
 http://jxnblk.github.io/tempo
 
-Tempo is designed to work well independently, but is built in the same spirit as [BASSCSS](http://jxnblk.github.io/basscss). Mix and match as you see fit.
+Tempo is designed to work well independently, but is built in the same spirit as [BASSCSS](http://jxnblk.github.io/basscss). Styles follow the open/closed principle. Mix and match as you see fit.
 
 ## Basic Usage
 Use the vanilla CSS files or import the `scss/tempo.scss` file with SASS.
 Set custom variables within the same file or in a separate variables file.
 
 ## Grid
-The default grid only kicks in at a set breakpoint `$breakpoint`.
+The default grid only kicks in at a set breakpoint, defined by the `$breakpoint` variable.
 
-Start with an optional container to set a max-width.
+Start with a container to set a max-width. The container is optional if you wish to span the full-width of the screen.
 
 ```html
 <div class="container">
@@ -39,6 +39,8 @@ Use the `.col` class to float elements left. Add a column width class to control
 </div>
 ```
 
+*Note: there is no `.col-12` class. For full-width content, simply omit the `.row` container.*
+
 Use `.col-pre-X` and `.col-post-X` classes to add spacing between columns.
 
 ```html
@@ -50,67 +52,66 @@ Use `.col-pre-X` and `.col-post-X` classes to add spacing between columns.
 </div>
 ```
 
+*Note: To prevent bloated CSS, the `$pre-post-max` variable limits the number of styles available.*
+
+To reverse the order of grid columns, use the `.col-right` class in place of `.col`.
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col-right col-6">First</div>
+    <div class="col-right col-6">Second</div>
+  </div>
+</div>
+```
+
+To center a column, use the `.col-center` class in place of `.col`.
+
+```html
+<div class="row">
+  <div class="col-center col-8">Centered column</div>
+</div>
+```
+
+*To achieve a similar effect, see the [Smaller containers](#smaller-containers) section*
+
 ## Mobile Grid
 Use mobile grid classes to affect layout at all screen widths.
 
 ```html
-<div class="clearfix container">
-  <div class="mobile-grid mobile-grid-6">Half width</div>
-  <div class="mobile-grid mobile-grid-6">Half width</div>
+<div class="container">
+  <div class="row">
+    <div class="mobile-col mobile-col-6">Half width</div>
+    <div class="mobile-col mobile-col-6">Half width</div>
+  </div>
 </div>
 ```
 
-Note: the mobile grid does not include pre/post classes. Why would you want that?
+*Note: the mobile grid does not include pre/post classes.*
 
 ### Combined mobile and desktop grid
 Use mobile grid classes as a base, then add default grid width classes to adjust layout at large screen widths.
 
 ```html
-<div class="clearfix container">
-  <div class="mobile-grid mobile-grid-6 grid-7">Half width at mobile - 7 columns on larger screens</div>
-  <div class="mobile-grid mobile-grid-6 grid-5">Half width at mobile - 5 columns on larger screens</div>
+<div class="container">
+  <div class="row">
+    <div class="mobile-col mobile-col-6 col-7">Half width at mobile - 7 columns on larger screens</div>
+    <div class="mobile-col mobile-col-6 col-5">Half width at mobile - 5 columns on larger screens</div>
+  </div>
 </div>
 ```
 
-## Centered Grid
-Use the centered grid classes to create single columns that line up with the grid.
+## Smaller Containers
+Use these container classes to create single columns that line up with the grid, without floats and extra markup.
 
 ```html
-<div class="centered-grid-8">Centered single column</div>
+<div class="container-col-8">Centered 8-column wide container</div>
 ```
 
-Note:
-- Centered grid elements are not floated and contain themselves, so there's no need for a clearfix or parent container.
-- Centered grid is only available at these sizes: 4, 6, 8, & 10.
+*Note:*
+- *These containers are not floated so there's no need for a clearfix or parent container.*
+- *Containers are only available at these sizes: 4, 6, 8, & 10 column.*
 
-
-## Tiles
-Tiles are automatically resizing containers intended for collections of items, such as thumbnails.
-
-```html
-<div class="clearfix">
-  <div class="tile-big">Big Tile</div>
-  <div class="tile-big">Big Tile</div>
-  <!--
-
-    include as many as needed - no need for row containers
-
-  -->
-  <div class="tile-big">Big Tile</div>
-  <div class="tile-big">Big Tile</div>
-</div>
-```
-
-By default, tiles come at three sizes: `.tile-small`, `.tile-medium`, and `.tile-big`.
-
-### Mixin
-Use the mixin to define your own tiles. Pass the `build-tile()` mixin a list of 4 integers. They represent the number of columns across breakpoints. Use this mixin with care and be sure to remove any unused styles.
-
-```scss
-.tile-small {
-  @include build-tile( (3, 6, 9, 12) );
-}
-```
 
 ## Customizing
 Adjust these basic variables to suit your needs.
@@ -119,18 +120,36 @@ Adjust these basic variables to suit your needs.
 // .container max-width
 $max-width: 75rem !default;
 
-// Grid and tile gutter
-$gutter: 3% !default;
+// Grid gutter
+$gutter: 1.5rem !default;
 
 // Maximum level of pre/post classes to generate
 $pre-post-max: 2 !default;
 
-// Breakpoints
-$bp1: 36rem !default;
-$bp2: 60rem !default;
-$bp3: 75rem !default;
+// Breakpoint
+$breakpoint: 36rem !default;
 ```
 
+---
 
-MIT License http://opensource.org/licenses/MIT
+The MIT License (MIT)
 
+Copyright (c) 2014 Brent Jackson
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

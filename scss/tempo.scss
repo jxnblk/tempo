@@ -17,7 +17,7 @@
 $max-width: 75rem !default;
 
 // Grid gutter
-$gutter: 1.5rem;
+$gutter: 1.5rem !default;
 
 // Maximum level of pre/post classes to generate
 $pre-post-max: 2 !default;
@@ -70,18 +70,18 @@ $breakpoint: 36em !default;
       .col-post-#{$i} { margin-right: percentage($i/12); }
     }
   }
-  .measure-col-8 {
+  .container-col-10 {
+    max-width: (10/12 * ($max-width + $gutter)) - $gutter;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container-col-8 {
     max-width: (8/12 * ($max-width + $gutter)) - $gutter;
     margin-right: auto;
     margin-left: auto;
   }
-  .measure-col-6 {
+  .container-col-6 {
     max-width: (6/12 * ($max-width + $gutter)) - $gutter;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .measure-col-10 {
-    max-width: (10/12 * ($max-width + $gutter)) - $gutter;
     margin-right: auto;
     margin-left: auto;
   }

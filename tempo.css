@@ -153,20 +153,20 @@
     width: 91.66667%;
   }
 
-  .measure-col-8 {
+  .container-col-10 {
+    max-width: 62.25rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container-col-8 {
     max-width: 49.5rem;
     margin-right: auto;
     margin-left: auto;
   }
 
-  .measure-col-6 {
+  .container-col-6 {
     max-width: 36.75rem;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .measure-col-10 {
-    max-width: 62.25rem;
     margin-right: auto;
     margin-left: auto;
   }
