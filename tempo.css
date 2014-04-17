@@ -171,3 +171,18 @@
     margin-left: auto;
   }
 }
+
+@media screen and (min-width: 36em) {
+  .table {
+    display: table;
+    width: 103%;
+    margin-left: -3%;
+    table-layout: fixed;
+  }
+
+  .cell {
+    display: table-cell;
+    padding-left: 3%;
+    vertical-align: middle;
+  }
+}
