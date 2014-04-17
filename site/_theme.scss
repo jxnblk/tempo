@@ -6,6 +6,12 @@ $light-gray: #eee;
 $mid-gray: #777;
 $dark-gray: #333;
 
+// From Jxnblk Style Guide
+//$blue: #0096cc;
+$light-gray: #eaeff0;
+$mid-gray: #708690;
+$dark-gray: #405660;
+
 .white { color: #fff; }
 .blue { color: $blue; }
 .dark-blue { color: $dark-blue; }
@@ -25,21 +31,24 @@ $dark-gray: #333;
 .bg-darken-3 { background-color: rgba(#000, .3); }
 
 .reverse {
-  color: $blue;
-  background-color: rgba(#fff,.8);
-  box-shadow: inset 0 0 4rem rgba($blue, .4);
+  color: #fff;
+  background-color: $dark-gray;
+  //box-shadow: inset 0 0 4rem rgba($blue, .4);
 }
 
 // Base theme styles
 
 body {
-  color: rgba(#fff,.9);
-  background-color: $blue;
-  box-shadow: inset 0 0 9rem rgba($dark-blue, .8);
+  //color: rgba(#fff,.9);
+  //background-color: $blue;
+  //box-shadow: inset 0 0 9rem rgba($dark-blue, .8);
+  color: $dark-gray;
+  background-color: #fff;
 }
 
 a {
-  color: #fff;
+  //color: #fff;
+  color: $blue;
   text-decoration: none;
   &:hover {
     //color: darken($blue, 10%);
@@ -64,12 +73,15 @@ a {
 }
 
 .button-box {
-  box-shadow: 0 0 0 2px #fff;
+  font-weight: 600;
+  //color: $blue;
+  box-shadow: 0 0 0 2px;
   &:hover,
   &:focus {
+    color: #fff;
     text-decoration: none;
     background-color: $blue;
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px $blue, 0 0 0 6px rgba(#fff, .6);
+    box-shadow: 0 0 0 2px $blue, 0 0 0 4px #fff, 0 0 0 6px rgba($blue, .6);
   }
 }
 
@@ -94,10 +106,11 @@ a {
 
 .button-blue {
   color: #fff;
-  background-color: $dark-blue;
+  background-color: $blue;
   &:hover {
     color: #fff;
-    background-color: darken($dark-blue, 20%);
+    text-decoration: none;
+    background-color: darken($blue, 20%);
   }
 }
 
@@ -110,14 +123,8 @@ a {
 
 
 .outline { box-shadow: inset 0 0 0 1px rgba(darken($blue, 20%), .2); }
-.box { box-shadow: inset 0 0 0 2px rgba(#fff, .5); }
-
-.bg-grid {
-  background-image: url(grid-rules.svg);
-  background-size: 100% 1rem;
-}
-
-.box-over {
+.box {
+  box-shadow: inset 0 0 0 2px rgba($mid-gray,.25);
   position: relative;
   &:before,
   &:after {
@@ -131,8 +138,8 @@ a {
     top: 0; bottom: 0;
     width: 105%;
     height: 100%;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+    border-top: 1px solid rgba($mid-gray,.25);
+    border-bottom: 1px solid rgba($mid-gray,.25);
   }
   &:after {
     content: '';
@@ -141,8 +148,8 @@ a {
     right: 0;
     width: 100%;
     height: 120%;
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
+    border-left: 1px solid rgba($mid-gray,.25);
+    border-right: 1px solid rgba($mid-gray,.25);
   }
 }
 

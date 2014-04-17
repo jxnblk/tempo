@@ -2,7 +2,7 @@
  
   TEMPO
 
-  Responsive layout modules for BASSCSS
+  Responsive grid system
   http://jxnblk.github.io/tempo
 
   Made with love by Jxnblk (c)2014 Brent Jackson
@@ -15,274 +15,160 @@
   margin-left: auto;
 }
 
-.mobile-grid {
+.row {
+  overflow: hidden;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+}
+
+.col,
+.col-right,
+.col-center,
+.mobile-col,
+.px-gutter {
+  box-sizing: border-box;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.mobile-col {
   float: left;
-  margin-left: 6%;
-}
-.mobile-grid:first-child {
-  margin-left: 0;
 }
 
-.mobile-grid-1 {
-  width: 2.83333%;
+.mobile-col-1 {
+  width: 8.33333%;
 }
 
-.mobile-grid-2 {
-  width: 11.66667%;
+.mobile-col-2 {
+  width: 16.66667%;
 }
 
-.mobile-grid-3 {
-  width: 20.5%;
+.mobile-col-3 {
+  width: 25%;
 }
 
-.mobile-grid-4 {
-  width: 29.33333%;
+.mobile-col-4 {
+  width: 33.33333%;
 }
 
-.mobile-grid-5 {
-  width: 38.16667%;
+.mobile-col-5 {
+  width: 41.66667%;
 }
 
-.mobile-grid-6 {
-  width: 47%;
+.mobile-col-6 {
+  width: 50%;
 }
 
-.mobile-grid-7 {
-  width: 55.83333%;
+.mobile-col-7 {
+  width: 58.33333%;
 }
 
-.mobile-grid-8 {
-  width: 64.66667%;
+.mobile-col-8 {
+  width: 66.66667%;
 }
 
-.mobile-grid-9 {
-  width: 73.5%;
+.mobile-col-9 {
+  width: 75%;
 }
 
-.mobile-grid-10 {
-  width: 82.33333%;
+.mobile-col-10 {
+  width: 83.33333%;
 }
 
-.mobile-grid-11 {
-  width: 91.16667%;
+.mobile-col-11 {
+  width: 91.66667%;
 }
 
 @media screen and (min-width: 36em) {
-  .grid, .mobile-grid {
+  .col {
     float: left;
-    margin-left: 3%;
-  }
-  .grid:first-child, .mobile-grid:first-child {
-    margin-left: 0;
   }
 
-  .grid-1, .mobile-grid-1 {
-    width: 5.58333%;
+  .col-right {
+    float: right;
   }
 
-  .grid-pre-1 {
-    margin-left: 11.58333%;
-  }
-  .grid-pre-1:first-child {
-    margin-left: 8.58333%;
-  }
-
-  .grid-post-1 {
-    margin-right: 8.58333%;
-  }
-
-  .grid-2, .mobile-grid-2 {
-    width: 14.16667%;
-  }
-
-  .grid-pre-2 {
-    margin-left: 20.16667%;
-  }
-  .grid-pre-2:first-child {
-    margin-left: 17.16667%;
-  }
-
-  .grid-post-2 {
-    margin-right: 17.16667%;
-  }
-
-  .grid-3, .mobile-grid-3 {
-    width: 22.75%;
-  }
-
-  .grid-4, .mobile-grid-4 {
-    width: 31.33333%;
-  }
-
-  .centered-grid-4 {
-    width: 31.33333%;
-    max-width: 23.5rem;
+  .col-center {
     margin-right: auto;
     margin-left: auto;
   }
 
-  .grid-5, .mobile-grid-5 {
-    width: 39.91667%;
+  .col-1 {
+    width: 8.33333%;
   }
 
-  .grid-6, .mobile-grid-6 {
-    width: 48.5%;
+  .col-pre-1 {
+    margin-left: 8.33333%;
   }
 
-  .centered-grid-6 {
-    width: 48.5%;
-    max-width: 36.375rem;
+  .col-post-1 {
+    margin-right: 8.33333%;
+  }
+
+  .col-2 {
+    width: 16.66667%;
+  }
+
+  .col-pre-2 {
+    margin-left: 16.66667%;
+  }
+
+  .col-post-2 {
+    margin-right: 16.66667%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33333%;
+  }
+
+  .col-5 {
+    width: 41.66667%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33333%;
+  }
+
+  .col-8 {
+    width: 66.66667%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33333%;
+  }
+
+  .col-11 {
+    width: 91.66667%;
+  }
+
+  .container-col-10 {
+    max-width: 62.25rem;
     margin-right: auto;
     margin-left: auto;
   }
 
-  .grid-7, .mobile-grid-7 {
-    width: 57.08333%;
-  }
-
-  .grid-8, .mobile-grid-8 {
-    width: 65.66667%;
-  }
-
-  .centered-grid-8 {
-    width: 65.66667%;
-    max-width: 49.25rem;
+  .container-col-8 {
+    max-width: 49.5rem;
     margin-right: auto;
     margin-left: auto;
   }
 
-  .grid-9, .mobile-grid-9 {
-    width: 74.25%;
-  }
-
-  .grid-10, .mobile-grid-10 {
-    width: 82.83333%;
-  }
-
-  .centered-grid-10 {
-    width: 82.83333%;
-    max-width: 62.125rem;
+  .container-col-6 {
+    max-width: 36.75rem;
     margin-right: auto;
     margin-left: auto;
-  }
-
-  .grid-11, .mobile-grid-11 {
-    width: 91.41667%;
-  }
-}
-.tile-small {
-  float: left;
-  margin-left: 3%;
-}
-@media screen and (max-width: 36em) {
-  .tile-small {
-    width: 31.33333%;
-  }
-  .tile-small:nth-child(3n + 1) {
-    margin-left: 0;
-    clear: left;
-  }
-}
-@media screen and (min-width: 36em) and (max-width: 60em) {
-  .tile-small {
-    width: 14.16667%;
-  }
-  .tile-small:nth-child(6n + 1) {
-    margin-left: 0;
-    clear: left;
-  }
-}
-@media screen and (min-width: 60em) and (max-width: 75em) {
-  .tile-small {
-    width: 8.44444%;
-  }
-  .tile-small:nth-child(9n + 1) {
-    margin-left: 0;
-    clear: left;
-  }
-}
-@media screen and (min-width: 75em) {
-  .tile-small {
-    width: 5.58333%;
-  }
-  .tile-small:nth-child(12n + 1) {
-    margin-left: 0;
-    clear: left;
-  }
-}
-
-.tile-medium {
-  float: left;
-  margin-left: 3%;
-}
-@media screen and (max-width: 36em) {
-  .tile-medium {
-    width: 48.5%;
-  }
-  .tile-medium:nth-child(2n + 1) {
-    margin-left: 0;
-    clear: left;
-  }
-}
-@media screen and (min-width: 36em) and (max-width: 60em) {
-  .tile-medium {
-    width: 22.75%;
-  }
-  .tile-medium:nth-child(4n + 1) {
-    margin-left: 0;
-    clear: left;
-  }
-}
-@media screen and (min-width: 60em) and (max-width: 75em) {
-  .tile-medium {
-    width: 14.16667%;
-  }
-  .tile-medium:nth-child(6n + 1) {
-    margin-left: 0;
-    clear: left;
-  }
-}
-@media screen and (min-width: 75em) {
-  .tile-medium {
-    width: 9.875%;
-  }
-  .tile-medium:nth-child(8n + 1) {
-    margin-left: 0;
-    clear: left;
-  }
-}
-
-@media screen and (min-width: 36em) {
-  .tile-big {
-    float: left;
-    margin-left: 3%;
-  }
-}
-@media screen and (min-width: 36em) and (max-width: 60em) {
-  .tile-big {
-    width: 48.5%;
-  }
-  .tile-big:nth-child(2n + 1) {
-    margin-left: 0;
-    clear: left;
-  }
-}
-@media screen and (min-width: 60em) and (max-width: 75em) {
-  .tile-big {
-    width: 31.33333%;
-  }
-  .tile-big:nth-child(3n + 1) {
-    margin-left: 0;
-    clear: left;
-  }
-}
-@media screen and (min-width: 75em) {
-  .tile-big {
-    width: 22.75%;
-  }
-  .tile-big:nth-child(4n + 1) {
-    margin-left: 0;
-    clear: left;
   }
 }
 
