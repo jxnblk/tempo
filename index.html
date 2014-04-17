@@ -8,190 +8,169 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="site/style.css" />
   <link rel="stylesheet" href="tempo.css" />
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type="text/css">
+  <style>
+    .caps-center { padding-left: .2em; }
+  </style>
 </head>
 
 <body class="px2">
 
-  <header class="container py4 bg-grid">
-    <h1 class="px1 caps h2 inline-block box box-over">Tempo</h1>
-    <p class="h3 dark-blue">Responsive CSS Layout Modules</p>
+  <header class="container py4 center">
+    <div class="inline-block p2 mb2 box">
+      <h1 class="caps caps-center h1 mb0 inline-block">Tempo</h1>
+    </div>
+    <p class="h3 mb2">Responsive Grid System</p>
+    <p>
+      <a href="//github.com/jxnblk/tempo" class="mr1 button button-box">View on Github</a>
+      <a href="https://twitter.com/intent/tweet?text=TEMPO: Responsive Grid System&url=http://jxnblk.github.io/tempo&via=jxnblk" target="_blank" class="button button-box ">Tweet</a>
+    </p>
   </header>
 
-  <section id="grid" class="container py4 outline bg-grid">
-    <h1 class="h3 caps mb0">12 Column Flexible Grid System</h1>
-    <p class="dark-blue">You probably don't need a grid system, but here you go</p>
-    <div class="clearfix h2 bold py1">
-      <div class="grid grid-8 py1 reverse">.grid-8</div>
-      <div class="grid grid-4 py1 box box-over">.grid-4</div>
+  <section id="grid" class="container py4">
+    <h1 class="h2 mb0">12 Column Flexible Grid</h1>
+    <p>You probably don't need a grid system, but here you go</p>
+    <div class="h2 bold center row py1">
+      <div class="col col-8"><div class="py1 box">.col-8</div></div>
+      <div class="col col-4"><div class="py1 box">.col-4</div></div>
     </div>
-    <div class="clearfix py1">
-      <div class="grid grid-6 box">.grid-6</div>
-      <div class="grid grid-6 box">.grid-6</div>
+    <div class="bold center row py1">
+      <div class="col col-6"><div class="py1 box">.col-6</div></div>
+      <div class="col col-6"><div class="py1 box">.col-6</div></div>
     </div>
-    <div class="clearfix py1">
-      <div class="grid grid-4 box">.grid-4</div>
-      <div class="grid grid-4 box">.grid-4</div>
-      <div class="grid grid-4 box">.grid-4</div>
+    <div class="bold center row py1">
+      <div class="col col-4"><div class="py1 box">.col-4</div></div>
+      <div class="col col-4"><div class="py1 box">.col-4</div></div>
+      <div class="col col-4"><div class="py1 box">.col-4</div></div>
     </div>
-    <div class="clearfix py1">
-      <div class="grid grid-3 box">.grid-3</div>
-      <div class="grid grid-3 box">.grid-3</div>
-      <div class="grid grid-3 box">.grid-3</div>
-      <div class="grid grid-3 box">.grid-3</div>
+    <div class="bold center row py1">
+      <div class="col col-3"><div class="py1 box">.col-3</div></div>
+      <div class="col col-3"><div class="py1 box">.col-3</div></div>
+      <div class="col col-3"><div class="py1 box">.col-3</div></div>
+      <div class="col col-3"><div class="py1 box">.col-3</div></div>
     </div>
-    <div class="clearfix py1">
-      <div class="grid grid-2 box">.grid-2</div>
-      <div class="grid grid-2 box">.grid-2</div>
-      <div class="grid grid-2 box">.grid-2</div>
-      <div class="grid grid-2 box">.grid-2</div>
-      <div class="grid grid-2 box">.grid-2</div>
-      <div class="grid grid-2 box">.grid-2</div>
+    <div class="bold center row py1">
+      <div class="col col-2"><div class="py1 box">.col-2</div></div>
+      <div class="col col-2"><div class="py1 box">.col-2</div></div>
+      <div class="col col-2"><div class="py1 box">.col-2</div></div>
+      <div class="col col-2"><div class="py1 box">.col-2</div></div>
+      <div class="col col-2"><div class="py1 box">.col-2</div></div>
+      <div class="col col-2"><div class="py1 box">.col-2</div></div>
     </div>
-    <div class="clearfix py1">
-      <div class="grid grid-1 box">.grid-1</div>
-      <div class="grid grid-1 box">.grid-1</div>
-      <div class="grid grid-1 box">.grid-1</div>
-      <div class="grid grid-1 box">.grid-1</div>
-      <div class="grid grid-1 box">.grid-1</div>
-      <div class="grid grid-1 box">.grid-1</div>
-      <div class="grid grid-1 box">.grid-1</div>
-      <div class="grid grid-1 box">.grid-1</div>
-      <div class="grid grid-1 box">.grid-1</div>
-      <div class="grid grid-1 box">.grid-1</div>
-      <div class="grid grid-1 box">.grid-1</div>
-      <div class="grid grid-1 box">.grid-1</div>
+    <div class="bold center row py1 mb2">
+      <div class="col col-1"><div class="py1 box">.col-1</div></div>
+      <div class="col col-1"><div class="py1 box">.col-1</div></div>
+      <div class="col col-1"><div class="py1 box">.col-1</div></div>
+      <div class="col col-1"><div class="py1 box">.col-1</div></div>
+      <div class="col col-1"><div class="py1 box">.col-1</div></div>
+      <div class="col col-1"><div class="py1 box">.col-1</div></div>
+      <div class="col col-1"><div class="py1 box">.col-1</div></div>
+      <div class="col col-1"><div class="py1 box">.col-1</div></div>
+      <div class="col col-1"><div class="py1 box">.col-1</div></div>
+      <div class="col col-1"><div class="py1 box">.col-1</div></div>
+      <div class="col col-1"><div class="py1 box">.col-1</div></div>
+      <div class="col col-1"><div class="py1 box">.col-1</div></div>
     </div>
-  </section>
-
-  <section id="mobile-grid" class="container py4 outline bg-grid">
-    <h1 class="h3 caps mb0">Mobile Grid</h1>
-    <p class="dark-blue">Works at all screen widths</p>
-    <div class="clearfix py1 h2 bold">
-      <div class="mobile-grid mobile-grid-6 py1 reverse">.mobile-grid-6</div>
-      <div class="mobile-grid mobile-grid-6 py1 box box-over">.mobile-grid-6</div>
-    </div>
-    <div class="clearfix py1">
-      <div class="mobile-grid mobile-grid-4 py1 box">.mobile-grid-4</div>
-      <div class="mobile-grid mobile-grid-4 py1 box">.mobile-grid-4</div>
-      <div class="mobile-grid mobile-grid-4 py1 box">.mobile-grid-4</div>
-    </div>
-    <div class="clearfix py1">
-      <div class="mobile-grid mobile-grid-3 py1 box">.mobile-grid-3</div>
-      <div class="mobile-grid mobile-grid-3 py1 box">.mobile-grid-3</div>
-      <div class="mobile-grid mobile-grid-3 py1 box">.mobile-grid-3</div>
-      <div class="mobile-grid mobile-grid-3 py1 box">.mobile-grid-3</div>
-    </div>
-    <div class="clearfix py1">
-      <div class="mobile-grid mobile-grid-2 py1 box">.mobile-grid-2</div>
-      <div class="mobile-grid mobile-grid-2 py1 box">.mobile-grid-2</div>
-      <div class="mobile-grid mobile-grid-2 py1 box">.mobile-grid-2</div>
-      <div class="mobile-grid mobile-grid-2 py1 box">.mobile-grid-2</div>
-      <div class="mobile-grid mobile-grid-2 py1 box">.mobile-grid-2</div>
-      <div class="mobile-grid mobile-grid-2 py1 box">.mobile-grid-2</div>
-    </div>
-  </section>
-
-  <section id="table-grid" class="container py4 outline bg-grid">
-    <h1 class="h3 caps mb0">Table Grid</h1>
-    <p class="dark-blue">Vertically centered cells</p>
-    <div class="table py1">
-      <div class="cell grid-3">
-        <div class="h2 reverse py1">
-          <h2 class="h2">.cell .grid-3</h2>
-          <p class="p">Vertically centered</p>
+    <h2 class="h3 mb0">Nesting</h2>
+    <div class="bold center row py1 mb2">
+      <div class="col col-6">
+        <div class="row py1 box">
+          <div class="col col-6"><div class="py1 box">.col-6</div></div>
+          <div class="col col-6"><div class="py1 box">.col-6</div></div>
         </div>
       </div>
-      <div class="cell grid-3"><div class="h3 box box-over py1">.cell .grid-3</div></div>
-      <div class="cell grid-3"><div class="h3 box box-over py1">.cell .grid-3</div></div>
-      <div class="cell grid-3"><div class="h3 box box-over py1">.cell .grid-3</div></div>
+      <div class="col col-6"><div class="py1 box">.col-6</div></div>
     </div>
-    <div class="table py1">
-      <div class="cell grid-4"><div class="h3 box py1">.cell .grid-4</div></div>
-      <div class="cell grid-4"><div class="h3 box py1">.cell .grid-4</div></div>
-      <div class="cell grid-4">
-        <div class="h2 box py1">
-          .cell .grid-4
-        </div>
-      </div>
+    <h2 class="h3 mb0">Reversed Order</h2>
+    <div class="bold center row py1 mb2">
+      <div class="col-right col-6"><div class="py1 box">First</div></div>
+      <div class="col-right col-6"><div class="py1 box">Second</div></div>
     </div>
-  </section>
-
-  <section id="centered-columns" class="container py4 outline bg-grid">
-    <h1 class="h3 caps mb0">Centered Single Columns</h1>
-    <p class="mb2 dark-blue">Non-floated, max-width based columns</p>
-    <div class="centered-grid-10 py2 mb2 reverse">
-      <h2 class="h2 mb0">.centered-grid-10</h2>
+    <h2 class="h3 mb0">Pre/Post Margins</h2>
+    <div class="bold center row py1 mb2">
+      <div class="col col-4 col-pre-2"><div class="py1 box">.col-pre-2</div></div>
+      <div class="col col-4 col-post-2"><div class="py1 box">.col-post-2</div></div>
     </div>
-    <div class="centered-grid-8 py2 mb2 box box-over">
-      <h2 class="h3 mb0">.centered-grid-8</div>
-    </div>
-    <div class="centered-grid-6 py2 box">
-      <h2 class="h3 mb0">.centered-grid-6</h2>
+    <h2 class="h3 mb0">Centered Columns</h2>
+    <div class="bold center row py1 mb2">
+      <div class="col-center col-8"><div class="py1 box">.col-center</div></div>
     </div>
   </section>
 
-  <section id="tiles" class="container py4 outline bg-grid">
-    <h2 class="h3 caps mb0">Tiles</h2>
-    <p class="mb2 dark-blue">Alternative layout module for collections</p>
-    <div class="clearfix h3">
-      <div class="tile-big py1 mb1 reverse">.tile-big</div>
-      <div class="tile-big py1 mb1 reverse">.tile-big</div>
-      <div class="tile-big py1 mb1 reverse">.tile-big</div>
-      <div class="tile-big py1 mb1 reverse">.tile-big</div>
-      <div class="tile-big py1 mb1 reverse">.tile-big</div>
-      <div class="tile-big py1 mb1 reverse">.tile-big</div>
-      <div class="tile-big py1 mb1 reverse">.tile-big</div>
-      <div class="tile-big py1 mb1 reverse">.tile-big</div>
-      <div class="tile-big py1 mb1 reverse">.tile-big</div>
-      <div class="tile-big py1 mb1 reverse">.tile-big</div>
-      <div class="tile-big py1 mb1 reverse">.tile-big</div>
-      <div class="tile-big py1 mb1 reverse">.tile-big</div>
+  <section id="mobile-grid" class="container py4">
+    <h1 class="h2 mb0">Mobile Grid</h1>
+    <p>Works at all screen widths</p>
+    <div class="h2 bold center row py1">
+      <div class="mobile-col mobile-col-6"><div class="py1 box">.mobile-col-6</div></div>
+      <div class="mobile-col mobile-col-6"><div class="py1 box">.mobile-col-6</div></div>
     </div>
-    <div class="clearfix p">
-      <div class="tile-medium py1 mb1 box">.tile-medium</div>
-      <div class="tile-medium py1 mb1 box">.tile-medium</div>
-      <div class="tile-medium py1 mb1 box">.tile-medium</div>
-      <div class="tile-medium py1 mb1 box">.tile-medium</div>
-      <div class="tile-medium py1 mb1 box">.tile-medium</div>
-      <div class="tile-medium py1 mb1 box">.tile-medium</div>
-      <div class="tile-medium py1 mb1 box">.tile-medium</div>
-      <div class="tile-medium py1 mb1 box">.tile-medium</div>
+    <div class="bold center row py1">
+      <div class="mobile-col mobile-col-4"><div class="py1 box">.mobile-col-4</div></div>
+      <div class="mobile-col mobile-col-4"><div class="py1 box">.mobile-col-4</div></div>
+      <div class="mobile-col mobile-col-4"><div class="py1 box">.mobile-col-4</div></div>
     </div>
-    <div class="clearfix small">
-      <div class="tile-small py1 mb1 outline">.tile-small</div>
-      <div class="tile-small py1 mb1 outline">.tile-small</div>
-      <div class="tile-small py1 mb1 outline">.tile-small</div>
-      <div class="tile-small py1 mb1 outline">.tile-small</div>
-      <div class="tile-small py1 mb1 outline">.tile-small</div>
-      <div class="tile-small py1 mb1 outline">.tile-small</div>
-      <div class="tile-small py1 mb1 outline">.tile-small</div>
-      <div class="tile-small py1 mb1 outline">.tile-small</div>
-      <div class="tile-small py1 mb1 outline">.tile-small</div>
-      <div class="tile-small py1 mb1 outline">.tile-small</div>
-      <div class="tile-small py1 mb1 outline">.tile-small</div>
-      <div class="tile-small py1 mb1 outline">.tile-small</div>
+    <div class="bold center row py1">
+      <div class="mobile-col mobile-col-3"><div class="py1 box">.mobile-col-3</div></div>
+      <div class="mobile-col mobile-col-3"><div class="py1 box">.mobile-col-3</div></div>
+      <div class="mobile-col mobile-col-3"><div class="py1 box">.mobile-col-3</div></div>
+      <div class="mobile-col mobile-col-3"><div class="py1 box">.mobile-col-3</div></div>
+    </div>
+    <div class="bold center row py1 mb2">
+      <div class="mobile-col mobile-col-2"><div class="py1 box">.mobile-col-2</div></div>
+      <div class="mobile-col mobile-col-2"><div class="py1 box">.mobile-col-2</div></div>
+      <div class="mobile-col mobile-col-2"><div class="py1 box">.mobile-col-2</div></div>
+      <div class="mobile-col mobile-col-2"><div class="py1 box">.mobile-col-2</div></div>
+      <div class="mobile-col mobile-col-2"><div class="py1 box">.mobile-col-2</div></div>
+      <div class="mobile-col mobile-col-2"><div class="py1 box">.mobile-col-2</div></div>
+    </div>
+    <h2 class="h3 mb0">Mixed Mobile & Desktop Grid</h2>
+    <div class="bold center row py1">
+      <div class="mobile-col mobile-col-6 col-8"><div class="py1 box">.mobile-col-6.col-8</div></div>
+      <div class="mobile-col mobile-col-6 col-4"><div class="py1 box">.mobile-col-6.col-4</div></div>
     </div>
   </section>
 
-  <section id="cta" class="container bg-grid box">
-    <div class="centered-grid-6 py4 mobile-center">
-      <h1 class="h3 caps">Get started</h1>
-      <a href="//github.com/jxnblk/tempo" class="p mb4 button button-big button-white caps">View on Github</a>
-      <p class="dark-blue">
-        Designed for use with: &nbsp;
-        <a href="//jxnblk.github.io/basscss" class="small caps mt2 button button-small button-box">BASSCSS</a>
-      </p>
+  <section id="centered-columns" class="container py4">
+    <h1 class="h2 mb0">Centered Single Columns</h1>
+    <p class="">Non-floated, max-width based columns</p>
+    <div class="bold center row py1">
+      <div class="col col-1"><div class="py1 box">1</div></div>
+      <div class="col col-1"><div class="py1 box">1</div></div>
+      <div class="col col-1"><div class="py1 box">1</div></div>
+      <div class="col col-1"><div class="py1 box">1</div></div>
+      <div class="col col-1"><div class="py1 box">1</div></div>
+      <div class="col col-1"><div class="py1 box">1</div></div>
+      <div class="col col-1"><div class="py1 box">1</div></div>
+      <div class="col col-1"><div class="py1 box">1</div></div>
+      <div class="col col-1"><div class="py1 box">1</div></div>
+      <div class="col col-1"><div class="py1 box">1</div></div>
+      <div class="col col-1"><div class="py1 box">1</div></div>
+      <div class="col col-1"><div class="py1 box">1</div></div>
+    </div>
+    <div class="center container-col-10 mb2">
+      <h2 class="h2 py2 mb0 box">.container-col-10</h2>
+    </div>
+    <div class="center container-col-8 mb2">
+      <h2 class="h3 py2 mb0 box">.container-col-8</div>
+    </div>
+    <div class="center container-col-6">
+      <h2 class="h3 py2 mb0 box">.container-col-6</h2>
     </div>
   </section>
 
-  <footer class="container clearfix py4 bg-grid dark-blue">
-    <div class="grid grid-7 mb2">
-      <a href="https://twitter.com/intent/tweet?text=TEMPO: Responsive layout modules for BASSCSS&url=http://jxnblk.github.io/tempo&via=jxnblk" target="_blank" class="small button button-small button-box caps">Tweet</a>
-    </div>
-    <div class="grid grid-5">
-      <p>Made with love by <a href="//jxnblk.com">Jxnblk</a></p>
-    </div>
+  <section id="cta" class="container center py4">
+    <h1 class="h2 mb0">Find your rhythm</h1>
+    <p class="mb2">Read the documentation and get started on Github.</p>
+    <a href="//github.com/jxnblk/tempo" class="p button button-big button-box">View on Github</a>
+  </section>
+
+  <footer class="center container py4">
+    <p class="leading-3">
+      <a href="https://twitter.com/intent/tweet?text=TEMPO: Responsive Grid System&url=http://jxnblk.github.io/tempo&via=jxnblk" target="_blank" class="small button button-small button-box dark-gray">Tweet</a>
+      <span class="mobile-hide">&nbsp;</span>
+      <br class="mobile-show">
+      Made with love by <a href="//jxnblk.com">Jxnblk</a>
+    </p>
   </footer>
 
 
