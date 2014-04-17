@@ -5,6 +5,16 @@ http://jxnblk.github.io/tempo
 
 Tempo is designed to work well independently, but is built in the same spirit as [BASSCSS](http://jxnblk.github.io/basscss). Styles follow the open/closed principle. Mix and match as you see fit.
 
+## Features
+- Breakpoint-based mobile-first design
+- OOCSS-inspired styles
+- Fixed-width gutters
+- Customizable variables
+- Non-grid-sytem-based containers to control typographic measure
+- Mobile grid styles
+- Reusable width utilities
+- Nesting, reverse ordering, margin, and centering utilities
+
 ## Basic Usage
 Use the vanilla CSS files or import the `scss/tempo.scss` file with SASS.
 Set custom variables within the same file or in a separate variables file.
