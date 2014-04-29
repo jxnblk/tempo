@@ -1,3 +1,6 @@
+---
+---
+
 <!doctype html> 
 <html lang="en"> 
 <head>
@@ -9,9 +12,7 @@
   <link rel="stylesheet" href="site/style.css" />
   <link rel="stylesheet" href="tempo.css" />
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type="text/css">
-  <style>
-    .caps-center { padding-left: .2em; }
-  </style>
+  <style> .caps-center { padding-left: .2em; } .left-align { text-align: left; } </style>
 </head>
 
 <body class="px2">
@@ -29,29 +30,29 @@
     </p>
   </header>
 
-  <section id="grid" class="container py4">
+  <section id="grid" class="center container py4">
     <h1 class="h2 mb0">12 Column Flexible Grid</h1>
     <p>You probably don't need a grid system, but here you go</p>
-    <div class="h2 bold center row py1">
+    <div class="h2 bold row py1">
       <div class="col col-8"><div class="py1 box">.col-8</div></div>
       <div class="col col-4"><div class="py1 box">.col-4</div></div>
     </div>
-    <div class="bold center row py1">
+    <div class="bold row py1">
       <div class="col col-6"><div class="py1 box">.col-6</div></div>
       <div class="col col-6"><div class="py1 box">.col-6</div></div>
     </div>
-    <div class="bold center row py1">
+    <div class="bold row py1">
       <div class="col col-4"><div class="py1 box">.col-4</div></div>
       <div class="col col-4"><div class="py1 box">.col-4</div></div>
       <div class="col col-4"><div class="py1 box">.col-4</div></div>
     </div>
-    <div class="bold center row py1">
+    <div class="bold row py1">
       <div class="col col-3"><div class="py1 box">.col-3</div></div>
       <div class="col col-3"><div class="py1 box">.col-3</div></div>
       <div class="col col-3"><div class="py1 box">.col-3</div></div>
       <div class="col col-3"><div class="py1 box">.col-3</div></div>
     </div>
-    <div class="bold center row py1">
+    <div class="bold row py1">
       <div class="col col-2"><div class="py1 box">.col-2</div></div>
       <div class="col col-2"><div class="py1 box">.col-2</div></div>
       <div class="col col-2"><div class="py1 box">.col-2</div></div>
@@ -59,7 +60,7 @@
       <div class="col col-2"><div class="py1 box">.col-2</div></div>
       <div class="col col-2"><div class="py1 box">.col-2</div></div>
     </div>
-    <div class="bold center row py1 mb2">
+    <div class="bold row py1 ">
       <div class="col col-1"><div class="py1 box">.col-1</div></div>
       <div class="col col-1"><div class="py1 box">.col-1</div></div>
       <div class="col col-1"><div class="py1 box">.col-1</div></div>
@@ -72,9 +73,22 @@
       <div class="col col-1"><div class="py1 box">.col-1</div></div>
       <div class="col col-1"><div class="py1 box">.col-1</div></div>
       <div class="col col-1"><div class="py1 box">.col-1</div></div>
+    </div>
+    <div class="container-col-6 mb2">
+      <h2>Basic Usage</h2>
+      <div class="left-align p1 blue outline rounded">
+{% highlight html %}
+<div class="container">
+  <div class="row">
+    <div class="col col-6">.col-6</div>
+    <div class="col col-6">.col-6</div>
+  </div>
+</div>
+{% endhighlight %}
+      </div>
     </div>
     <h2 class="h3 mb0">Nesting</h2>
-    <div class="bold center row py1 mb2">
+    <div class="bold row py1">
       <div class="col col-6">
         <div class="row py1 box">
           <div class="col col-6"><div class="py1 box">.col-6</div></div>
@@ -83,59 +97,135 @@
       </div>
       <div class="col col-6"><div class="py1 box">.col-6</div></div>
     </div>
+    <div class="container-col-6 mb2">
+      <div class="left-align p1 blue outline rounded">
+{% highlight html %}
+<div class="container">
+  <div class="row">
+    <div class="col col-6">
+      <div class="row">
+        <div class="col col-6">.col-6</div>
+        <div class="col col-6">.col-6</div>
+      </div>
+    </div>
+    <div class="col col-6">.col-6</div>
+  </div>
+</div>
+{% endhighlight %}
+      </div>
+    </div>
     <h2 class="h3 mb0">Reversed Order</h2>
-    <div class="bold center row py1 mb2">
+    <div class="bold row py1">
       <div class="col-right col-6"><div class="py1 box">First</div></div>
       <div class="col-right col-6"><div class="py1 box">Second</div></div>
     </div>
+    <div class="container-col-6 mb2">
+      <div class="left-align p1 blue outline rounded">
+{% highlight html %}
+<div class="container">
+  <div class="row">
+    <div class="col-right col-6">First</div>
+    <div class="col-right col-6">Second</div>
+  </div>
+</div>
+{% endhighlight %}
+      </div>
+    </div>
     <h2 class="h3 mb0">Pre/Post Margins</h2>
-    <div class="bold center row py1 mb2">
+    <div class="bold row py1">
       <div class="col col-4 col-pre-2"><div class="py1 box">.col-pre-2</div></div>
       <div class="col col-4 col-post-2"><div class="py1 box">.col-post-2</div></div>
     </div>
+    <div class="container-col-6 mb2">
+      <div class="left-align p1 blue outline rounded">
+{% highlight html %}
+<div class="container">
+  <div class="row">
+    <div class="col col-4 col-pre-2">.col-pre-2</div>
+    <div class="col col-4 col-post-2">.col-post-2</div>
+  </div>
+</div>
+{% endhighlight %}
+      </div>
+    </div>
     <h2 class="h3 mb0">Centered Columns</h2>
-    <div class="bold center row py1 mb2">
+    <div class="bold row py1">
       <div class="col-center col-8"><div class="py1 box">.col-center</div></div>
+    </div>
+    <div class="container-col-6 mb2">
+      <div class="left-align p1 blue outline rounded">
+{% highlight html %}
+<div class="container">
+  <div class="row">
+    <div class="col-center col-8">.col-center</div>
+  </div>
+</div>
+{% endhighlight %}
+      </div>
     </div>
   </section>
 
-  <section id="mobile-grid" class="container py4">
+  <section id="mobile-grid" class="center container py4">
     <h1 class="h2 mb0">Mobile Grid</h1>
     <p>Works at all screen widths</p>
-    <div class="h2 bold center row py1">
+    <div class="h2 bold row py1">
       <div class="mobile-col mobile-col-6"><div class="py1 box">.mobile-col-6</div></div>
       <div class="mobile-col mobile-col-6"><div class="py1 box">.mobile-col-6</div></div>
     </div>
-    <div class="bold center row py1">
+    <div class="bold row py1">
       <div class="mobile-col mobile-col-4"><div class="py1 box">.mobile-col-4</div></div>
       <div class="mobile-col mobile-col-4"><div class="py1 box">.mobile-col-4</div></div>
       <div class="mobile-col mobile-col-4"><div class="py1 box">.mobile-col-4</div></div>
     </div>
-    <div class="bold center row py1">
+    <div class="bold row py1">
       <div class="mobile-col mobile-col-3"><div class="py1 box">.mobile-col-3</div></div>
       <div class="mobile-col mobile-col-3"><div class="py1 box">.mobile-col-3</div></div>
       <div class="mobile-col mobile-col-3"><div class="py1 box">.mobile-col-3</div></div>
       <div class="mobile-col mobile-col-3"><div class="py1 box">.mobile-col-3</div></div>
     </div>
-    <div class="bold center row py1 mb2">
+    <div class="bold row py1">
       <div class="mobile-col mobile-col-2"><div class="py1 box">.mobile-col-2</div></div>
       <div class="mobile-col mobile-col-2"><div class="py1 box">.mobile-col-2</div></div>
       <div class="mobile-col mobile-col-2"><div class="py1 box">.mobile-col-2</div></div>
       <div class="mobile-col mobile-col-2"><div class="py1 box">.mobile-col-2</div></div>
       <div class="mobile-col mobile-col-2"><div class="py1 box">.mobile-col-2</div></div>
       <div class="mobile-col mobile-col-2"><div class="py1 box">.mobile-col-2</div></div>
+    </div>
+    <div class="container-col-6 mb2">
+      <div class="left-align p1 blue outline rounded">
+{% highlight html %}
+<div class="container">
+  <div class="row">
+    <div class="mobile-col mobile-col-6">.mobile-col-6</div>
+    <div class="mobile-col mobile-col-6">.mobile-col-6</div>
+  </div>
+</div>
+{% endhighlight %}
+      </div>
     </div>
     <h2 class="h3 mb0">Mixed Mobile & Desktop Grid</h2>
-    <div class="bold center row py1">
+    <div class="bold row py1">
       <div class="mobile-col mobile-col-6 col-8"><div class="py1 box">.mobile-col-6.col-8</div></div>
       <div class="mobile-col mobile-col-6 col-4"><div class="py1 box">.mobile-col-6.col-4</div></div>
     </div>
+    <div class="container-col-6 mb2">
+      <div class="left-align p1 blue outline rounded">
+{% highlight html %}
+<div class="container">
+  <div class="row">
+    <div class="mobile-col mobile-col-6 col-8">.mobile-col-6.col-8</div>
+    <div class="mobile-col mobile-col-6 col-4">.mobile-col-6.col-4</div>
+  </div>
+</div>
+{% endhighlight %}
+      </div>
+    </div>
   </section>
 
-  <section id="centered-columns" class="container py4">
+  <section id="centered-columns" class="center container py4">
     <h1 class="h2 mb0">Centered Single Columns</h1>
     <p class="">Non-floated, max-width based columns</p>
-    <div class="bold center row py1">
+    <div class="bold row py1">
       <div class="col col-1"><div class="py1 box">1</div></div>
       <div class="col col-1"><div class="py1 box">1</div></div>
       <div class="col col-1"><div class="py1 box">1</div></div>
@@ -149,14 +239,23 @@
       <div class="col col-1"><div class="py1 box">1</div></div>
       <div class="col col-1"><div class="py1 box">1</div></div>
     </div>
-    <div class="center container-col-10 mb2">
+    <div class="container-col-10 mb2">
       <h2 class="h2 py2 mb0 box">.container-col-10</h2>
     </div>
-    <div class="center container-col-8 mb2">
+    <div class="container-col-8 mb2">
       <h2 class="h3 py2 mb0 box">.container-col-8</div>
     </div>
-    <div class="center container-col-6">
+    <div class="container-col-6">
       <h2 class="h3 py2 mb0 box">.container-col-6</h2>
+    </div>
+    <div class="container-col-6">
+      <div class="left-align p1 blue outline rounded">
+{% highlight html %}
+<div class="container-col-10">.container-col-10</div>
+<div class="container-col-8">.container-col-8</div>
+<div class="container-col-6">.container-col-6</div>
+{% endhighlight %}
+      </div>
     </div>
   </section>
 
