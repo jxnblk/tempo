@@ -9,8 +9,14 @@
   <meta name="author" content="Jxnblk">
   <meta name="description" content="Responsive OOCSS Grid System">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="docs/auto.css" />
+  <link rel="stylesheet" href="docs/autobass.css" />
   <link rel="stylesheet" href="tempo.css" />
+  <style>
+    .box { box-shadow: inset 0 0 0 2px rgba(64,86,96,0.25); position: relative; }
+      .box:before, .box:after { content: ''; position: absolute; box-sizing: border-box; opacity: .5; }
+      .box:before { left: -2.5%; top: 0; bottom: 0; width: 105%; height: 100%; border-top: 1px solid rgba(64,86,96,0.25); border-bottom: 1px solid rgba(64,86,96,0.25); }
+      .box:after { content: ''; position: absolute; top: -10%; right: 0; width: 100%; height: 120%; border-left: 1px solid rgba(64,86,96,0.25); border-right: 1px solid rgba(64,86,96,0.25); }
+  </style>
 </head>
 
 <body class="px2">
@@ -239,12 +245,12 @@
   <section id="cta" class="container py4">
     <h1>Get Started Now</h1>
     <p>Read the documentation and get started on Github.</p>
-    <a href="//github.com/jxnblk/tempo" class="h3 button button-big button-box">View on Github</a>
+    <a href="//github.com/jxnblk/tempo" class="h4 button button-big button-box">View on Github</a>
   </section>
 
   <footer class="center container py2">
     <p>
-      <a href="https://twitter.com/intent/tweet?text=TEMPO: Responsive Grid System&url=http://jxnblk.github.io/tempo&via=jxnblk" target="_blank" class="button button-small button-box dark-gray">Tweet</a>
+      <a href="https://twitter.com/intent/tweet?text=TEMPO: Responsive Grid System&url=http://jxnblk.github.io/tempo&via=jxnblk" target="_blank" class="button button-small button-box">Tweet</a>
       <span class="mobile-hide">&nbsp;</span>
       <br class="mobile-show">
       Made with love by <a href="//jxnblk.com">Jxnblk</a>
