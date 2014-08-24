@@ -18,9 +18,7 @@ Tempo is designed to work well independently, but is built in the same spirit as
 ## Modules Included
 - Simple 12 column flexible grid
 - Mobile 12 column grid
-- Table grid
 - Centered grid-aligned single columns
-- Tile object
 
 ## Basic Usage
 Use the vanilla CSS files or import the `scss/tempo.scss` file with SASS.

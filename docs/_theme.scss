@@ -1,0 +1,53 @@
+// Theme
+
+.dark-gray { color: $dark-gray; }
+
+.button {
+  border-radius: .25rem;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  transition-property: box-shadow , background-color, transform;
+}
+
+.button-box {
+  box-shadow: 0 0 0 2px;
+  &:hover,
+  &:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: $blue;
+    box-shadow: 0 0 0 2px $blue, 0 0 0 4px #fff, 0 0 0 6px rgba($blue, .6);
+  }
+}
+
+.rounded { border-radius: .25rem; }
+
+.box {
+  box-shadow: inset 0 0 0 2px rgba($mid-gray,.25);
+  position: relative;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    opacity: .5;
+  }
+  &:before {
+    left: -2.5%;
+    top: 0; bottom: 0;
+    width: 105%;
+    height: 100%;
+    border-top: 1px solid rgba($mid-gray,.25);
+    border-bottom: 1px solid rgba($mid-gray,.25);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: 0;
+    width: 100%;
+    height: 120%;
+    border-left: 1px solid rgba($mid-gray,.25);
+    border-right: 1px solid rgba($mid-gray,.25);
+  }
+}
